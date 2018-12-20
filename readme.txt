@@ -13,3 +13,4 @@ use merge --no-ff -m "123" dev
 stash 4
 stash 3
 a stash a
+c stash c
