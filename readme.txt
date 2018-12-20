@@ -11,3 +11,4 @@ use merge --no-ff -m "123" dev
 11 no has --no-ff
 12 no-has --no-ff
 stash 4
+stash 3
