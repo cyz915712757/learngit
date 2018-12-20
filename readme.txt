@@ -8,3 +8,4 @@ branch branch branch
 first time to test git stash
 use merge --no-ff -m "123" dev
 1
+11 no has --no-ff
