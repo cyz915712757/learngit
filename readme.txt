@@ -12,3 +12,4 @@ use merge --no-ff -m "123" dev
 12 no-has --no-ff
 stash 4
 stash 3
+a stash a
