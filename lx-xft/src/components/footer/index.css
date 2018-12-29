@@ -1,0 +1,23 @@
+.footer-bar {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #333;
+}
+
+.footer-bar p {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.footer-user-agreement {
+  margin-left: 20px;
+  color: #00b4ed;
+  font-size: 12px;
+}
+
+.marginLeft5{
+  margin-left:5px;
+}

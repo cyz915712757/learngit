@@ -1,0 +1,22 @@
+<table width="100%" class="report-detail">
+  <thead>
+      <tr class="report-detail-title">
+      <th class="report-detail-name">状态</th>
+      <th class="report-detail-name">操作人</th>
+      <th class="report-detail-name">时间</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{?!it.flag}}
+        <tr><td colspan="3">对不起，暂无数据</td></tr>
+    {{??}}
+      {{~it.list: obj}}
+          <tr>
+            <td>{{=obj.operationType}}</td>
+            <td>{{=obj.operationUser}}</td>
+            <td>{{=obj.operationTime}}</td>
+          </tr>
+        {{~}}
+    {{?}}
+  </tbody>
+</table>

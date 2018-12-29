@@ -1,0 +1,33 @@
+#header {
+  background-color: #333;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.header-wrapper {
+  width: 1000px;
+  margin:0 auto;
+  color: #fff;
+}
+
+.side-left {
+  float: left;
+  width: 131px;
+  height: 22px;
+  background: url(../../assets/img/lx-logo.png) no-repeat;
+  margin-top: 18px;
+}
+
+.side-right {
+  float: right;
+}
+
+.telphone {
+  font-size: 18px;
+}
+
+.customer-phone {
+  padding-top: 2px;
+  margin-right: 20px;
+}

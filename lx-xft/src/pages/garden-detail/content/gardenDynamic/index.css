@@ -1,0 +1,71 @@
+.garden-dynamic {
+  position: relative;
+  margin-top: -10px;
+}
+
+.garden-dynamic .flow-cicle {
+  display: inline-block;
+  border: 2px solid #00b4ed;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  vertical-align: text-bottom;
+  margin-left: 25px;
+  margin-right: 55px;
+}
+
+.garden-dynamic .lead-flow {
+  float: right;
+  position: absolute;
+  right: 0;
+}
+
+.garden-dynamic .flow-download,
+.garden-dynamic .flow-download:hover,
+.garden-dynamic .flow-download:focus {
+  color: #888;
+  text-decoration: underline;
+}
+
+.garden-dynamic .icon-xiazai {
+  color: #00b4ed;
+  margin-left: 10px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.garden-dynamic .flow-desc {
+  width: 68px;
+}
+
+.garden-dynamic .flow-desc span {
+  float: right;
+  margin-top: 5px;
+}
+
+.garden-dynamic .dynamic-title {
+  color: #333;
+  cursor: pointer;
+}
+
+.garden-dynamic .flow-status {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.garden-dynamic .flow-line {
+  width: 5px;
+  height: 65px;
+  background-color: #e7e7e7;
+  margin-left: 102px;
+  margin-top: -29px;
+  display: inline-block;
+}
+
+.pagination-box {
+  text-align: center;
+}
+
+.detail-content {
+  text-align: left;
+}

@@ -1,0 +1,91 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.modify-password-wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 25px 50px 25px;
+}
+
+.modify-title {
+  color: #333;
+}
+
+.modify-flag {
+  font-size: 16px;
+  float: left;
+}
+
+.modify-form-group {
+  width: 420px;
+  height: 53px;
+  line-height: 50px;
+  border: 1px solid #e9e9e9;
+  background-color: #f9f9f9;
+  margin: 20px 0;
+}
+
+.modify-form-group label {
+  color: #999;
+  font-weight: 100;
+  margin-left: 20px;
+  float: left;
+}
+
+.modify-form-group input {
+  width: 346px;
+  border: 0;
+  margin-left: 20px;
+  background-color: #f9f9f9;
+  height: 50px;
+  outline: none;
+}
+
+.modify-btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 420px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #00b4ed;
+  color: #fff;
+  font-size: 18px;
+}
+
+a.modify-btn:hover,
+a.modify-btn:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.modify-error-message {
+  line-height: 0;
+  color: #333;
+}
+
+.modify-error-message a,
+.icon-gantanhao {
+  color: #00b4ed;
+}
+
+.modify-error-message i {
+  margin-right: 10px;
+}
+
+input.belong-company {
+  width: 290px;
+}
+
+.layui-layer-title {
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+}

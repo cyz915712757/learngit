@@ -1,0 +1,62 @@
+.layui-layer-btn .layui-layer-btn0 {
+  background: #00b4ed;
+  border: 1px solid #00b4ed;
+  box-shadow: 0 1px 0 #00b4ed inset;
+  display: inline-block;
+  padding: 0 15px;
+  border-radius: 3px 3px 3px 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.custom-layer-msg {
+  min-width: 0;
+}
+
+.custom-layer-msg .layui-layer-content {
+  padding: 20px 50px;
+  min-height: 20px;
+  line-height: 20px;
+}
+
+.custom-layer-msg .content {
+  font-size: 18px;
+  text-align: center;
+}
+
+.custom-layer-msg i {
+  font-size: 19px;
+  margin-right: 10px;
+}
+
+.custom-layer-msg i.icon-tishifu {
+  color: #2266b3;
+}
+
+.custom-layer-msg i.icon-zhengque1 {
+  color: #5ea51e;
+}
+
+.custom-layer-msg i.icon-jinggao {
+  color: #cc0403;
+}
+
+
+/* custom style **/
+.layer-ext-qfang .layui-layer-content {
+  background-color: #cbcccd !important;
+  padding: 4px 4px !important;
+}
+
+.layer-ext-qfang .layui-layer-content-inner {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  color: #000;
+  min-width: 200px;
+}
+
+.layui-layer-tips i.layui-layer-TipsG {
+  z-index: -1 !important;
+}

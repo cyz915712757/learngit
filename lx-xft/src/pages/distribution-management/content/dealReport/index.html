@@ -1,0 +1,68 @@
+<p class="report-info"><span class="ellips"><label>成交楼盘：</label>{{!it.gardenName}}</span><span class="ellips"><label>成交房号：</label>{{!it.room}}</span></p>
+<p class="report-info"><span><label>成交价格：</label>{{!it.dealPrice}}</span><span><label>上数日期：</label>{{!it.subscribeCreateDate}}</span></p>
+<p class="report-info"><span><label>成交客户：</label>{{!it.dealCustomer}}</span><span><label>客户电话：</label>{{!it.customerPhone}}</span></p>
+<p class="report-info"><span><label>成交确认人：</label>{{!it.dealUser}}</span><span><label>案场负责人：</label>{{!it.siteUser}}</span></p>
+<p class="report-info"><span><label>报备经纪人：</label>{{!it.reservationEmployee}}</label></span><span><label>报备日期：</label>{{!it.reservationTime}}</span></p>
+<h5 class="deal-person">分销经纪人 {{!it.distributionEmployee}}</h5>
+<table width="100%" class="deal-detail">
+  <tbody>
+    <tr class="deal-detail-title">
+      <th></th>
+      <th class="deal-detail-name">应结 ( 元 )</th>
+      <th class="deal-detail-name">已结 ( 元 )</th>
+      <th class="deal-detail-name">未结 ( 元 )</th>
+    </tr>
+    <tr>
+      <td class="deal-detail-name">佣金</td>
+      <td>{{=it.totalCommission || 0}}</td>
+      <td>{{=it.paidCommission || 0}}</td>
+      <td>{{= (it.totalCommission-it.paidCommission).toFixed(2) > 0.01 ? (it.totalCommission-it.paidCommission).toFixed(2):0 || 0}}</td>
+    </tr>
+    <tr class="odd">
+      <td class="deal-detail-name">现金奖</td>
+      <td>{{=it.totalCash || 0}}</td>
+      <td>{{=it.paidCash || 0}}</td>
+      <td>{{=(it.totalCash - it.paidCash).toFixed(2) > 0.01 ? (it.totalCash - it.paidCash).toFixed(2) : 0 || 0}}</td>
+    </tr>
+    <tr>
+      <td class="deal-detail-name">合计</td>
+      <td>{{=(it.totalCommission+it.totalCash).toFixed(2) || 0}}</td>
+      <td>{{=(it.paidCommission+it.paidCash).toFixed(2) || 0}}{{?it.paidCommission}}<i class="iconfont icon-wenhao"></i>{{?}}
+        <div class="closing-info dn">
+          <div class="closing-title"><span style="width: 80px;display: inline-block;">流水号</span><span>类型</span><span>结算金额（元）</span><span>结算日期</span></div>
+          {{~it.jsDetail :value}}
+          <div class="closing-item"><span style="width:120px">{{=value.serialNumber||'暂无流水号'}}</span><span style="width:50px">{{=value.type}}</span><span class="closing-money">{{=value.commission}}</span><span class="closing-time">{{=value.paidTime}}</span></div>
+          {{~}}
+        </div>
+      </td>
+      <td class="total-sum">{{=(it.totalCommission+it.totalCash - it.paidCash-it.paidCommission).toFixed(2) > 0.01 ? (it.totalCommission+it.totalCash - it.paidCash-it.paidCommission).toFixed(2) : 0 || 0}}</td>
+    </tr>
+  </tbody>
+</table>
+<!-- <ul class="report-person clearfix"> -->
+<!--   <li>
+    <p>应结佣金</p><span class="report-person-price">{{=it.totalCommission || 0}}</span>元
+  </li>
+  <li>
+    <p>已结佣金{{?it.paidCommission}}<i class="iconfont icon-wenhao"></i>{{?}}</p><span class="report-person-price">{{=it.paidCommission || 0}}</span>元
+    <div class="closing-info dn">
+      <p class="closing-title"><span class="closing-title-money">结算金额（元）</span><span>结算日期</span></p>
+      {{~it.paidCommissionDetail :value}} {{?value.commission}}
+      <p class="closing-item"><span class="closing-money">{{=value.commission}}</span><span class="closing-time">{{=value.paidTime}}</span></p>
+      {{?}} {{~}}
+    </div>
+  </li> -->
+<!-- <li>
+    <p>应结现金奖</p><span class="report-person-price">{{=it.totalCash || 0}}</span>元
+  </li>
+  <li>
+    <p>已结现金奖{{?it.paidCash}}<i class="iconfont icon-wenhao"></i>{{?}}</p><span class="report-person-price">{{=it.paidCash || 0}}</span>元 {{?it.paidCashDetail}}
+    <div class="closing-info dn">
+      <p class="closing-title"><span class="closing-title-money">结算金额（元）</span><span>结算日期</span></p>
+      {{~it.paidCashDetail :value}} {{?value.commission}}
+      <p class="closing-item"><span class="closing-money">{{=value.commission}}</span><span class="closing-time">{{=value.paidTime}}</span></p>
+      {{?}} {{~}}
+    </div>
+    {{?}}
+  </li> -->
+<!-- </ul> -->

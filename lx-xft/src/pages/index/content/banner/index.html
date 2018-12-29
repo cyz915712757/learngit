@@ -1,0 +1,7 @@
+<div class="banner-list" id="bannerList">
+  {{~ it :obj}}
+  <div style="background-image:url({{!obj.picUrl}})">{{?obj.expandId}}
+    <a href="garden-detail.html?gid={{!obj.expandId}}" target="_blank"></a>{{??obj.webUrl}}
+    <a href="{{!obj.webUrl}}" target="_blank"></a>{{?}}</div>
+  {{~}}
+</div>

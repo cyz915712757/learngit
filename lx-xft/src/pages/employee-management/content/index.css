@@ -1,0 +1,388 @@
+.page-wrap {
+  padding: 20px 0;
+  background-color: #f5f5f5;
+}
+
+.emloyee-box {
+  margin: 0 auto;
+}
+
+.emloyee-box.card-block {
+  margin: 20px auto;
+}
+
+.employee-list .employee-tbbox {
+  margin-top: 20px;
+}
+
+.query-box .query-item.m-sel {
+  width: 135px;
+  height: 30px;
+  margin-right: 10px;
+  float: left
+}
+
+.query-box .query-item.m-sel .scaret {
+  top: 14px
+}
+
+.query-box .auto {
+  float: left;
+  clear: none
+}
+
+.query-box .query-item.m-sel .form-control {
+  height: 30px;
+  border: 1px solid #e9e9e9;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 12px
+}
+
+.query-box .m-btn {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin-right: 10px;
+  border-radius:5px;
+}
+
+.query-box .dash-btn {
+  display: block;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-align: center;
+  background-color:#00b4ed;
+  border: 1px solid #00b4ed;
+  border-radius:5px;
+  text-decoration: none;
+}
+
+.query-box a.dash-btn {
+  color: #fff;
+}
+
+.query-box .open.select-menu {
+  min-width: 135px
+}
+
+.query-box .auto-copmlete {
+  margin-right: 10px;
+}
+
+.query-box .auto-copmlete .form-control {
+  width: 180px;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
+  border-radius: 0;
+  border: 1px solid #e9e9e9;
+  box-shadow: none
+}
+
+.auto-copmlete.select .glyphicon-remove {
+  height: 18px;
+  line-height: 18px
+}
+
+
+/* summary部分 */
+
+.data-box {
+  padding: 0 20px;
+}
+
+.data-box .item {
+  width: 220px;
+  height: 100px;
+  overflow: hidden;
+  padding: 22px 0;
+  border-top: 4px solid #00b4ed;
+  box-shadow: -1px 0 3px #ededed, 1px 0 3px #ededed, 0 3px 8px #f4f4f4;
+}
+
+.data-box .item.item2 {
+  width: 720px;
+  border-top: 4px solid #f91;
+}
+
+.data-box .item2 .subitem {
+  width: 33.3%;
+  float: left;
+}
+
+.data-box .inner-con {
+  color: #999;
+  font-size: 14px;
+  text-align: center
+}
+
+.data-box .inner-con p.title {
+  font-size: 12px;
+}
+
+.data-box .inner-con p {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.data-box .inner-con span.c-max {
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+  line-height: 30px;
+}
+
+.data-box .v-line {
+  position: absolute;
+  top: 12px;
+  width: 1px;
+  height: 24px;
+  background-color: #e9e9e9;
+  margin: 0;
+  right: 0;
+}
+
+
+/*弹出框*/
+
+.layui-layer-title {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.layui-layer-setwin {
+  top: 10px;
+}
+
+.select-menu li>a {
+  font-size: 12px;
+}
+.pagination-box .pagination {
+    float: right;
+    margin: 10px 22px 0 0
+}
+#employeeTb a.op-a,#storeEmployeeTb a.op-a{
+  margin-right:15px;
+}
+#employeeTb a.op-disabled{
+  color:gray;
+  cursor:pointer;
+  text-decoration:none;
+  margin-right:15px;
+}
+
+/*修改框*/
+.detail-box {
+  margin: 20px;
+}
+
+.avatar-box {
+  width: 90px;
+  height: 90px;
+}
+
+.avatar-box img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.text-box {
+  margin-left: 10px;
+}
+
+.text-tb {
+  font-size: 12px;
+  color: #333;
+  margin-top: 8px;
+}
+
+.text-tb .ellips {
+  width: 160px;
+}
+
+.text-tb .name-txt {
+  font-weight: bold;
+}
+
+.text-tb .status.stop {
+  color: #00b4ed;
+}
+
+.text-tb .status.using {
+  color: #48c448;
+}
+
+.text-tb th,
+.text-tb td {
+  padding: 5px 0;
+}
+
+.text-tb th {
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+.record-box {
+  padding-left: 20px;
+}
+
+.record-head {
+  padding-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.record-list {
+  margin-top: 20px;
+  padding: 0 0 20px 220px;
+  height: 181px;
+  overflow: auto;
+}
+
+.record-list li {
+  position: relative;
+  color: #333;
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 12px;
+}
+
+.record-list li .date-txt {
+  color: #666;
+  position: absolute;
+  left: -125px;
+}
+
+.record-list .line {
+  border-left: 1px solid #e7e7e7;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  left: -30px;
+  top: 4px;
+}
+
+.record-list li:last-child .line {
+  display: none;
+}
+
+.record-list .yuan {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #00b4ed;
+  border-radius: 50%;
+  position: absolute;
+  left: -34px;
+  top: 4px;
+  z-index: 3;
+  background: #fff;
+}
+
+.detail-btn .m-btn,
+.deta a.m-btn {
+  min-width: 30px;
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.detail-btn.btn-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 5px 20px
+}
+
+.open-title .layui-layer-btn .layui-layer-btn0 {
+  background: #00b4ed;
+  border: 1px solid #00b4ed;
+  box-shadow: 0;
+  padding: 0 10px;
+  border-radius: 0;
+}
+
+.open-title .layui-layer-btn a {
+  font-size: 12px;
+  line-height: 25px;
+  height: 25px;
+  margin: 0 10px;
+}
+
+.open-title .layui-layer-btn {
+  background: #f5f5f5;
+  padding: 5px;
+}
+
+
+/*弹出的提示框*/
+
+.tip-box {
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.tip-box i {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+  left: -7px
+}
+.querist-box i {
+  color: #00b0ec;
+}
+.warn-box i{
+   color: #00b4ed;
+}
+/*record-no*/
+.record-no{
+  text-align: center;
+  width: 100%;
+  padding:20px 0 20px 0;
+
+}
+.record-no p
+{
+font-size: 16px;
+color:#666;
+margin-top:15px;
+}
+.record-no i{
+  font-size: 70px;
+  color:#e2e2e2;
+  display: inline-block;
+    height: 70px;
+}
+.new-title{
+  display:inline-block;
+  margin-top:5px;
+  margin-left:10px;
+  font-size:13px;
+}
+.new-title span{
+  display:inline-block;
+  width:25px;
+  color:red;
+  font-size:18px;
+  text-align:center;
+}
+#agentNumber,#storeNumber{
+  margin-left:5px;
+}

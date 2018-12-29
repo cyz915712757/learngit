@@ -1,0 +1,27 @@
+<!-- 地址切换 -->
+<div class="city-switchBox pr">
+  <a class="city-select" href="javascript:;" id="citySelect" data-cid
+="{{?it.area}}{{!it.area.id}}{{?}}"><i class="iconfont icon-weizhi"></i>
+<span class="cityname">{{?it.area}}{{!it.area.name}}{{?}}</span></a>
+  <div class="city-layer dn" id="cityLayer">
+   <i class="triangle-up"></i>
+    <a class="iconfont icon-yuan city-layer-close js-close" href="javascript:;"><i class="iconfont icon-guanbi"></i></a>
+    <div class="city-con">
+      <p class="tit">选择城市</p>
+      <ul class="city-opts clearfix">
+      {{ for(var prop in it.city.cities) { }}
+      <li class="clearfix">
+       <span class="city-letter"><i class="iconfont icon-yuan"></i><em>{{=prop}}</em></span>
+         <p class="js-citySel">
+         {{?it.city.cities[prop]}}
+          {{~it.city.cities[prop] :obj:index}}
+          <a href="javascript:;" data-cid="{{!obj.id}}">{{!obj.name}}</a>
+          {{~}}
+          {{?}}
+         </p>
+       </li>
+       {{ } }}
+      </ul>
+    </div>
+  </div>
+</div>

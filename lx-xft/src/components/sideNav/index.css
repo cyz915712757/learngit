@@ -1,0 +1,112 @@
+.side-bar {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  width: 38px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: -1px 0 3px #ededed, 1px 0 3px #ededed, 0 -1px 4px #f2f2f2, 0 3px 8px #ededed;
+  z-index:10000;
+}
+
+.side-bar a.item {
+  display: block;
+  text-decoration: none;
+  padding: 0 5px;
+  position: relative;
+}
+
+.inner {
+  padding: 5px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.side-bar .item i,
+a.back-top i {
+  color: #000;
+  font-size: 20px;
+}
+
+.side-bar a p {
+  font-size: 12px;
+  color: #333;
+  margin: 0;
+}
+
+.side-bar a.item:hover {
+  background-color: #00b4ed;
+  color: #fff;
+}
+
+.side-bar a.item:hover .inner {
+  border-color: #00b4ed;
+}
+
+.side-bar a.item:hover i,
+.side-bar a.item:hover p {
+  color: #fff;
+}
+
+.side-bar .side-down {
+  position: absolute;
+  bottom: 0;
+  left: -69px;
+  width: 69px;
+  height: 39px;
+  background: #00b4ed;
+  line-height: 39px;
+  padding-left: 7px;
+  display: none
+}
+
+.side-bar a.item.ewm .side-down {
+  left:-108px;
+  height: 108px;
+  width: 108px;
+  padding: 7px;
+}
+
+.side-bar a.item:hover .side-down {
+  display: block;
+}
+
+.side-down img {
+  width: 94px;
+  height: 94px;
+}
+
+.side-bar .ewm p {
+  margin-top:4px;
+  line-height: 13px;
+  padding:0px 0px 0px 1px;
+}
+
+a.back-top {
+  display: block;
+  padding: 5px;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+
+.my-history .person-photo{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.side-bar .red-dot{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  top: 4px;
+  left: 3px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 15px;
+}
+

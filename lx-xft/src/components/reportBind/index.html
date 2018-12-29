@@ -1,0 +1,20 @@
+<div class="login-wrapper report-bind">
+  <div class="login-title clearfix">
+    <span class="login-flag">绑定公司</span>
+  </div>
+  <div class="login-form-group">
+    <span class="star">*</span>
+    <label for="userName">姓名</label>
+    <input type="text" id="userNameVal" maxlength="5" value="{{!it.name}}" disabled>
+  </div>
+  <div class="login-form-group">
+    <span class="star">*</span>
+    <label for="mobileNo">手机号</label>
+    <input type="text" class="tel-login special-width" value="{{!it.phone}}" disabled id="mobileNoVal">
+  </div>
+  <!-- 引入绑定组件 -->
+  <div id="storeNumber"></div>
+  <!-- 引入绑定组件 -->
+  <a href="javascript:;" class="login-btn" style="margin-top:20px">提交</a>
+  <!-- <div class="login-footer">申请账号过程中如有问题，请致电客服：0755-26916371（工作日 9:00-18:00）</div> -->
+</div>

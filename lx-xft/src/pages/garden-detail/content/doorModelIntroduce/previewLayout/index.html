@@ -1,0 +1,15 @@
+<div class="layout-preview">
+  {{~it.list :value}}
+  <div class="layout-preview-wrapper">
+    <div class="img-wrapper-parent">
+      <div class="img-wrapper">
+        {{?!value.url}}
+        <img src="../../../../../assets/img/broken-medium-layout.jpg" width="370" height="520" /> {{??}}
+        <img src="{{=value.url}}" /> {{?}}
+      </div>
+    </div>
+    <p class="layout-preview-text">{{=value.layout}}</p>
+    <p class="layout-preview-desc">{{=value.describe}}</p>
+  </div>
+  {{~}}
+</div>

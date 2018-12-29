@@ -1,0 +1,132 @@
+.garden-pic {
+  float: left;
+}
+
+.garden-pic-main {
+  width: 310px;
+  height: 237px;
+  border: 1px solid #ededed;
+}
+
+.garden-pic-main .desc {
+  position: absolute!important;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #000;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.garden-pic-nav {
+  width: 270px;
+  height: 65px;
+  margin-left: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.garden-pic-nav .slick-slide {
+  margin-right: 5px;
+  width: 80px!important;
+  height: 65px;
+  margin-left: 5px;
+}
+
+.garden-pic-nav .slick-slide.slick-active.slick-center {
+  width: 80px!important;
+  height: 65px;
+  border: 1px solid #00b4ed;
+}
+
+.garden-pic-nav .slick-center img {
+  width: 78px;
+  height: 63px;
+}
+
+.garden-pic-nav .slick-center .pic-nav-desc {
+  width: 78px;
+  height: 15px;
+}
+
+
+/*.garden-pic-nav .slick-list.draggable,
+.garden-pic-nav .slick-track {
+  height: 65px;
+}
+*/
+
+.pic-nav-wrapper {
+  position: relative;
+}
+
+.pic-nav-desc {
+  position: absolute;
+  bottom: -10px;
+  width: 85px;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  background-color: #000;
+  opacity: .5;
+  color: #fff;
+  font-size: 10px;
+}
+
+.garden-pic-nav .icon-qiehuan {
+  right: -20px;
+}
+
+.garden-pic-nav .icon-youqiehuan {
+  left: -20px;
+  z-index: 10;
+}
+
+.garden-pic-nav .icon-qiehuan,
+.garden-pic-nav .icon-youqiehuan {
+  display: inline-block;
+  width: 15px;
+  height: 65px;
+  background-color: #999;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  line-height: 65px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.garden-pic-nav .icon-qiehuan:hover,
+.garden-pic-nav .icon-youqiehuan:hover {
+  background-color: #333;
+}
+
+.garden-pic-nav .slick-disabled {
+  background-color: #999;
+  color: #fff;
+}
+
+.reset-close-btn {
+  right: -11px!important;
+  top: 0!important;
+}
+
+.js-photo-detail {
+  /*border: 1px solid #ededed;*/
+}
+
+.loading-wrapper {
+  text-align: center;
+  width: 310px;
+  height: 305px;
+  color: #888;
+  padding-top: 100px;
+}
+
+.loading-wrapper p {
+  margin-top: 15px;
+}

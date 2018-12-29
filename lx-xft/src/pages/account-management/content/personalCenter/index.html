@@ -1,0 +1,48 @@
+<div class="card-block">
+  <div class="change-avatar">
+    <div class="avatar-box">
+      {{?it.photoUrl}}
+      <img src="{{!it.photoUrl}}" id="avatarUploadImg"> {{??}}
+      <img src="../../../../assets/img/default.png" id="avatarUploadImg"> {{?}}
+    </div>
+    <div class="avatar-uploadbox">
+      <span>上传头像</span>
+      <input type="file" name="avatarUpload" class="avatar-upload" id="avatarUpload" />
+    </div>
+    <p class="upload-tip">仅支持JPG、PNG、JPEG格式，小于5M的图片</p>
+  </div>
+  <div class="basic-info">
+    <p>
+      <label>城<span class="gap-dbword"></span>市：</label>
+      {{?it.area}}{{!it.area.name}}{{?}}
+    </p>
+    {{?(it.txtCompanyName && it.txtStoreName)}}
+    <p>
+      <label>公<span class="gap-dbword"></span>司：</label>
+      {{!it.txtCompanyName}}
+    </p>
+    <p>
+      <label>分<span class="gap-dbword"></span>店：</label>
+      {{!it.txtStoreName}}
+    </p>
+    <p>
+      <label>分&nbsp;&nbsp;店&nbsp;&nbsp;码：</label>
+      {{!it.storeNum}}
+    </p>
+
+    {{??}}
+    <p>
+      <label>公<span class="gap-dbword"></span>司：</label>
+      <a id="bindStore" href="javascript:;">立即绑定</a>
+    </p>
+    {{?}}
+    <p>
+      <label>手机号码：</label>{{!it.userName}}</p>
+  </div>
+  <div class="info-ctrl">
+    <a class="ctrl-btn modify-password" href="javascript:;"><i class="iconfont icon-mima"></i><span>修改密码</span></a>
+    {{?it.companyType==='OUTREACH'}}
+    <a class="ctrl-btn modify-phone" href="javascript:;"><i class="iconfont icon-shouji"></i><span>修改手机号</span></a>
+    {{?}}
+  </div>
+</div>

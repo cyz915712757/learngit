@@ -1,0 +1,60 @@
+#importWrapper {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 38px;
+}
+
+#deptSourcesImport,
+#waySourcesImport {
+  display: inline-block;
+  width: 200px;
+}
+
+#fileBtn {
+  display: inline-block;
+  width: 100px;
+  background-color: #f9f9f9;
+  color: #999;
+  border: 1px solid #e9e9e9;
+}
+
+#excelAddress {
+  color: #00afec;
+}
+
+#fileName {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.import-msg {
+  color: #000;
+  display: none;
+}
+
+.import-msg span {
+  color: #00b4ed;
+}
+
+.import-item {
+  margin-bottom: 20px;
+}
+
+.import-item label {
+  color: #999;
+}
+
+.import-item .js-import {
+  margin-right: 30px;
+}
+
+.import-group-btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 5px 30px;
+}

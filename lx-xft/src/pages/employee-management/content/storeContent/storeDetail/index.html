@@ -1,0 +1,34 @@
+<!--添加账号和修改资料共用模块-->
+<form class="edit-fm">
+    <div class="form-group clearfix">
+      <label for="bname">分店名称：</label>
+      <span class="show-text">{{!it.name||''}}</span>
+    </div>
+    <div class="form-group clearfix">
+      <label for="phone">分店电话：</label> 
+      <span class="show-text">{{!it.tel||''}}</span>
+    </div>
+    <div class="form-group clearfix">
+      <label for="idCard">城市：</label> 
+      <span class="show-text">{{!it.cityName||''}}</span>
+    </div>
+    <!--<div class="form-group clearfix">
+      <label for=""><span>*</span>分店：</label>
+      <input id="" type="text" class="form-control">
+    </div>-->
+    <div class="form-group clearfix">
+      <label for="store">区域：</label>
+      <span class="show-text">{{!it.countyName||''}}</span>
+    </div>
+    <div class="form-group clearfix">
+      <label for="position">片区：</label>
+      <span class="show-text">{{!it.areaName||''}}</span>
+    </div>
+    <div class="form-group clearfix">
+      <label for="">详细地址：</label>
+      <span class="show-text">{{!it.address||''}}</span>
+    </div>
+  </form>
+  <div class="detail-btn btn-box clearfix">
+    <button type="button" class="fm-btn m-btn m-ybtn fr" id="edit">确定</button>
+  </div>

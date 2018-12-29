@@ -1,0 +1,16 @@
+<li class="current" data-type="flow"><a data-track="{{!it.typeName}}跟进" href="javascript:;">跟进</a></li>
+{{?it.type !== 'resources'}}
+
+{{?it.crl}}
+  <li data-type="reservation"><a data-track="{{!it.typeName}}报备记录" href="javascript:;">报备记录<span></span></a></li>
+{{?}}
+
+{{?it.cgl}}
+  <li data-type="lead"><a data-track="{{!it.typeName}}带看记录" href="javascript:;">带看记录<span></span></a></li>
+{{?}}
+
+{{?it.cdl}}
+  <li data-type="deal"><a data-track="{{!it.typeName}}成交记录" href="javascript:;">成交记录<span></span></a></li>
+{{?}}
+
+{{?}}

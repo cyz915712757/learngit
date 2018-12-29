@@ -1,0 +1,31 @@
+<!-- <div class="clearfix card-wrapper clearfix" id="myCharts"></div> -->
+<div class="card-block store-query">
+    <!-- date start -->
+    <div class="date-box clearfix" id="dateSel">
+      <!--<a class="item cur js-date" href="javascript:;" data-date="7">最近7天</a>
+      <a class="item js-date" href="javascript:;" data-date="30">最近30天</a>-->
+      <a class="date-inBox pr" href="javascript:;">
+        <input id="dealStartDate" class="form-control" type="text" placeholder="起始日期" readonly><i class="iconfont icon-riqi js-dicon"></i></a>
+      <a href="javascript:;" class="date-text">至</a>
+      <a class="date-inBox pr" href="javascript:;">
+        <input id="dealEndDate" class="form-control" type="text" placeholder="结束日期" readonly><i class="iconfont icon-riqi js-dicon"></i>
+      </a>
+      <!--<input type="text" id="brokerName" placeholder="经纪人名称" class="query-item keyword">-->
+      <div class="select auto" id="brokerName"></div>
+      <a class="m-btn m-ybtn" href="javascript:;" id="queryBtn">查询</a>
+      <a class="m-btn m-cbtn fl" href="javascript:;" id="resetBtn">重置</a>
+      <!--<a href="javascript:;" class="date-tip">最多查看<span>3</span>个月数据</a>-->
+    </div>
+    <!-- date end -->
+  </div>
+
+<div class="my-deal-wrapper">
+  <div id="summary" class="sum-box"></div>
+  <ul class="item-title clearfix">
+    <li class="current"><a data-track="分销管理我的成交" href="javascript:;">我的成交</a></li>
+    <li><a data-track="分销管理我的报备" href="javascript:;">我的报备</a></li>
+    <li><a href="javascript:;" class="null-link">&nbsp;</a></li>
+  </ul>
+  <div class="item-content my-deal" id="myDeal"></div>
+  <div class="item-content my-report dn" id="myReport"></div>
+</div>

@@ -1,0 +1,61 @@
+#dealStatus {
+  clear: none;
+  margin-right: 10px;
+}
+
+.query-box a.r-btn {
+  background-color: #f9f9f9!important;
+  color: #999!important;
+  border: 1px solid #e9e9e9;
+}
+
+.query-box a {
+  margin-right: 10px;
+}
+
+a.see-report {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+  font-size: 12px;
+  border: 1px solid #ededed;
+  display: inline-block;
+  border-radius: 28px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.status-desc {
+  color: #999;
+}
+
+.my-report .pagination {
+  float: right;
+}
+
+.view-key {
+  color: #999;
+}
+
+.view-value {
+  color: #333;
+}
+
+.view-garden-name{
+  background-color: #333;
+  color:#fff;
+  font-size: 14px;
+  text-align: center;
+  padding:0 5px;
+}
+
+#acPerson{
+  padding: 5px 0;
+  padding-top: 0;
+}
+
+.view-content{
+  padding:0px 10px;
+  margin: 0;
+}

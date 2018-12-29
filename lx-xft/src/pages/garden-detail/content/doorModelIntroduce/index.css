@@ -1,0 +1,95 @@
+.layout-intro {
+  background-color: #fff;
+  height: 325px;
+}
+
+.layout-intro .responsive {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.layout-intro .slick-next,
+.layout-intro .slick-prev {
+  bottom: -65px;
+  top: auto;
+  width: 80px;
+  height: 35px;
+  box-shadow: 2px 3px 2px #ddd;
+  margin-right: -80px;
+  /*background-color: #00b4ed;*/
+}
+
+.layout-intro .slick-prev {
+  left: 44%;
+}
+
+.layout-intro .slick-next {
+  right: 45%;
+}
+
+.layout-intro img {
+/*  width: 210px;
+  height: 250px;*/
+  margin-right: 20px;
+}
+
+
+.js-preview-layout {
+  display: inline-block;
+  border: 1px solid #ededed;
+  width: 212px;
+  height: 250px;
+}
+
+.layout-intro .layout-wrapper {
+  position: relative;
+  width: 210px;
+  height: 250px;
+}
+
+.layout-intro .layout-desc {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  width: 210px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: #5b554e;
+  opacity: .8;
+  color: #fff;
+  font-size: 12px;
+}
+
+.layout-intro .layout-desc .describe {
+  margin-left: 20px;
+}
+
+.layout-intro .slick-arrow.icon-qiehuan,
+.layout-intro .slick-arrow.icon-youqiehuan {
+  bottom: -42px;
+  top: auto;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  box-shadow: 2px 3px 2px #ddd;
+  margin-right: -77px;
+  position: absolute;
+  color: #00b4ed;
+  text-align: center;
+  cursor: pointer;
+}
+
+.layout-intro .slick-arrow.icon-youqiehuan {
+  left: 38%;
+}
+
+.layout-intro .slick-arrow.icon-qiehuan {
+  right: 48%;
+}
+
+.reset-close-btn {
+  right: -11px!important;
+  top: 0!important;
+}

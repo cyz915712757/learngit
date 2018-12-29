@@ -1,0 +1,14 @@
+<!-- 过滤地区 -->
+<!-- area -->
+<div class="filter-con clearfix pr">
+  <span class="filter-title fl">区域：</span>
+  <ul class="filter-list clearfix js-filterSel js-filterArea" data-prop="countyId">
+    <li class="cur"><a href="javascript:;">不限</a></li>
+    {{~ it.childArea :obj:index}}
+    <li>
+      <a href="javascript:;" data-v="{{!obj.id}}"> <span class="section">{{!obj.name}}</span>({{=obj.gardenCount||0}})</a>
+    </li>
+    {{~}}
+  </ul>
+  <div id="subArea"></div>
+</div>

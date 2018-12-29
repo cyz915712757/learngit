@@ -1,0 +1,35 @@
+<div class="gallery-container clearfix">
+  <ul class="image-list">
+    {{~it.imageList :img:index}}
+    {{? img.index == '1'}}
+    <li class="gallery-image-item gallery-cover">
+    {{??}}
+    <li class="gallery-image-item">
+    {{?}}
+    <div class="gallery-image-wrap">
+      <div class="cover-flag"></div>
+      <a class="gallery-img-remove" href="javascript:;">&times;</a>
+      <img class="gallery-image" data-id="{{!img.id}}" data-fid="{{!img.fid}}" data-url="{{!img.url}}" src="{{=img.url && img.url.replace('{size}', '180x135')}}">
+
+      <div class="gallery-image-panel">
+        {{? img.imageType && it.imageTypeList}}
+          <select class="gallery-img-type">
+            {{~it.imageTypeList :typeItem:typeIndex}}
+              <option value="{{!typeItem.type}}" {{?img.imageType == typeItem.type}}selected{{?}}>{{!typeItem.desc}}</option>
+            {{~}}
+          </select>
+        {{?? img.index }}
+          {{?img.index == '1' }}
+          <span class="gallery-img-set-cover">设置封面</span>
+          {{??}}
+          <a href="javascript:;" class="gallery-img-set-cover">设置封面</a>
+          {{?}}
+        {{?}}
+        <a href="javascript:;" class="gallery-img-preview"><i class="iconfont icon-yulan fs12"></i> 预览</a>
+      </div>
+    </div>
+    </li>
+    {{~}}
+  </ul>
+  <button class="btn-add-image {{? it.imageTotalCount - it.imageList.length == 0}} btn-add-image-disabled{{?}}" data-image-total-count="{{=it.imageTotalCount}}" data-image-remaining-count="{{=it.imageTotalCount - it.imageList.length}}" type="button"><i class="iconfont icon-tianjia btn-add-image-text"></i><br><span class="btn-add-image-text">添加图片</span><br>您还可上传<span class="image-remaining-count">{{=it.imageTotalCount - it.imageList.length}}</span>张</button>
+</div>

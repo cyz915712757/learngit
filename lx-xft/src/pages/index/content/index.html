@@ -1,0 +1,36 @@
+<div id="banner"></div>
+<div class="building-box clearfix">
+  <div class="left-box fl">
+    <div class="leading-box">
+      <div class="leading-head clearfix">我的主打盘
+        {{?it.isrow}}
+        <a
+          class="js-switch switch-box fr"
+          href="javascript:;"
+        > <i class="iconfont icon-tupianliebiao"></i></a>
+        {{??}}
+        <a
+          class="js-switch switch-box fr grid"
+          href="javascript:;"
+        >
+          <i class="iconfont icon-wenziliebiao"></i></a>
+        {{?}}
+      </div>
+      {{?it.isrow}}
+      <div id="leadingRow"></div>
+      {{??}}
+      <div id="leadingGrid"></div>
+      {{?}}
+    </div>
+  </div>
+  <div class="right-box fl">
+    <div class="building-newbox">
+      <div class="building-shead">新上楼盘</div>
+      <div id="buildingNew"></div>
+    </div>
+    <div class="building-introbox">
+      <div class="building-shead">推荐楼盘</div>
+      <div id="buildingIntro"></div>
+    </div>
+  </div>
+</div>

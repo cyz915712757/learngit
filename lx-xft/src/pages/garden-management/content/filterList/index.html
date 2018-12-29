@@ -1,0 +1,45 @@
+<!-- 过滤条件 -->
+<!-- 物业 -->
+<div class="filter-con clearfix">
+  <span class="filter-title fl">物业：</span>
+  <ul class="filter-list clearfix js-filterSel" data-prop="propertyType">
+    <li class="cur"><a href="javascript:;">不限</a></li>
+    {{ for(var prop in it.propertyType) { }}
+    <li><a href="javascript:;" data-v="{{=prop}}">{{=it.propertyType[prop]}}</a></li>
+    {{ } }}
+  </ul>
+</div>
+<!-- 物业 -->
+<!-- 均价-->
+<div class="filter-con clearfix">
+  <span class="filter-title fl">均价：</span>
+  <ul class="filter-list clearfix js-filterSel" data-prop="avgPrice">
+    <li class="cur"><a href="javascript:;">不限</a></li>
+    {{~it.price :value:index}} {{ for(var prop in value) { }}
+    <li><a href="javascript:;" data-v="{{=prop}}">{{=value[prop]}}</a></li>
+    {{ } }} {{~}}
+  </ul>
+</div>
+<!-- 均价 -->
+<!-- 状态：-->
+<div class="filter-con clearfix">
+  <span class="filter-title fl">状态：</span>
+  <ul class="filter-list clearfix js-filterSel" data-prop="sellStatus">
+    <li class="cur"><a href="javascript:;">不限</a></li>
+    {{ for(var prop in it.sellStatus) { }}
+    <li><a href="javascript:;" data-v="{{=prop}}">{{=it.sellStatus[prop]}}</a></li>
+    {{ } }}
+  </ul>
+</div>
+<!-- 状态： -->
+<!-- 在售户型 -->
+<div class="filter-con clearfix">
+  <span class="filter-title fl">户型：</span>
+  <ul class="filter-list clearfix js-filterSel" data-prop="layout">
+    <li class="cur"><a href="javascript:;">不限</a></li>
+    {{ for(var prop in it.layout) { }}
+    <li><a href="javascript:;" data-v="{{=prop}}">{{=it.layout[prop]}}</a></li>
+    {{ } }}
+  </ul>
+</div>
+<!-- 在售户型 -->

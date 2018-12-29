@@ -1,0 +1,4 @@
+{{?it.allow==1}}
+ 当前可结算佣金为{{=it.applyCommission||0}}元
+ <a class="apply-paid{{?(it.applyCommission)}} haspaid{{??}} nopaid{{?}}" href="javascript:;" id="applyPaidBtn">申请结佣</a>
+{{?}}

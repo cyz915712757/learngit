@@ -1,0 +1,141 @@
+.deal-report {
+  padding: 40px 30px;
+  padding-right: 0;
+}
+
+.deal-report label {
+  color: #999;
+  font-weight: normal;
+}
+
+.report-info span {
+  width: 250px;
+  display: inline-block;
+}
+
+.deal-report h4 {
+  margin-top: 20px;
+}
+
+.report-person li {
+  float: left;
+  width: 110px;
+  height: 80px;
+  background-color: #f5f5f5;
+  border: 1px solid #ededed;
+  text-align: center;
+  margin-right: 10px;
+  padding-top: 15px;
+  position: relative;
+  color: #999;
+}
+
+.deal-report i {
+  margin-left: 5px;
+  color: #00b4ed;
+}
+
+.report-person i:hover .closing-info {
+  display: block;
+}
+
+.report-person .report-person-price {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+#dealDetail {
+  padding: 0;
+  left: -202px;
+  width: 400px;
+}
+
+.closing-title {
+  color: #999;
+  background: #f0f0f0;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+}
+
+.closing-title span {
+  margin-right: 30px;
+}
+
+.closing-title-money {
+  margin-right: 28px;
+}
+
+.closing-money {
+  text-align: center;
+  width: 95px!important;
+}
+
+.closing-time {
+  margin-left: 15px;
+}
+
+.closing-arrow {
+  top: 35px;
+  left: 70px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 12px solid #fff;
+  width: 0;
+  height: 0;
+  position: absolute;
+  display: none;
+}
+
+.closing-item {
+  color: #333;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+}
+
+.closing-item span {
+  display: inline-block;
+  width: 65px;
+}
+
+.order-garden-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.deal-detail {
+  width: 520px;
+}
+
+.deal-detail .odd {
+  background-color: #f9f9f9;
+}
+
+.deal-detail-title {
+  background-color: #f0f0f0;
+}
+
+.deal-detail th,
+.deal-detail td {
+  height: 30px;
+  border: 1px solid #e9e9e9;
+  text-align: center;
+  font-size: 12px;
+}
+
+.deal-detail-name {
+  color: #999;
+}
+
+.deal-detail .total-sum {
+  color: #00b4ed;
+  font-weight: bold;
+}
+
+.deal-person{
+  font-weight: bold;
+  margin-top: 35px;
+}

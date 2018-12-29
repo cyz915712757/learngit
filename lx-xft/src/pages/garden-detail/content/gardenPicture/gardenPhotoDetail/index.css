@@ -1,0 +1,77 @@
+#photoDetail {
+  padding: 30px;
+}
+
+.garden-photo-detail {
+  padding: 0 30px;
+}
+
+.garden-photo-detail ul {
+  margin-left: 20px;
+}
+
+.garden-photo-detail li {
+  float: left;
+  margin-right: 5px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.garden-photo-detail li.current a {
+  /*border: 1px solid #00b4ed;*/
+  color: #00b4ed;
+}
+
+.layout-photo-detail-wrapper img {
+  margin: 0 auto;
+  margin-top: 20px;
+  /*max-width: 100%;*/
+  height: 100%;
+}
+
+.layout-photo-detail-wrapper .layout-img-parent-wrapper {
+  display: table;
+  margin: 0 auto;
+}
+
+.layout-photo-detail-wrapper .layout-img-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  width: 800px;
+  height: 650px;
+}
+
+.garden-photo-detail li a {
+  line-height: 35px;
+  font-size: 12px;
+  height: 35px;
+  color: #999;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid #fff;
+}
+
+.num-desc {
+  text-align: center;
+  color: #00b4ed;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.garden-photo-detail .icon-qiehuan {
+  right: -40px;
+}
+
+.garden-photo-detail .icon-youqiehuan {
+  left: -40px;
+}
+
+.garden-photo-detail .icon-qiehuan,
+.garden-photo-detail .icon-youqiehuan {
+  position: absolute;
+  top: 50%;
+  color: #00b4ed;
+  font-size: 35px;
+  cursor: pointer;
+}

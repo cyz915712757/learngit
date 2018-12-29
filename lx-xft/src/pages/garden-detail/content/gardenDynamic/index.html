@@ -1,0 +1,21 @@
+{{?it.dynamic}}
+<div class="garden-common">
+  <p class="garden-common-title">楼盘动态</p>
+  <hr/> {{~it.dynamic :value:index}} {{?it.dynamic.length-1 == index}}
+  <div class="garden-dynamic">
+    <span>{{=value.createTimeStr.substring(0,10)}}</span><span class="flow-cicle"></span><a class="dynamic-title" data-id="{{=value.id}}"><span class="flow-status">{{=value.title}}</span></a>
+    <!-- <span class="lead-flow"><a href="javascript:;" class="flow-download">带看流程.doc</a><i class="iconfont icon-xiazai"></i></span> -->
+    <div class="flow-desc clearfix"><span>{{=value.typeStr}}</span></div>
+  </div>
+  {{??}}
+  <div class="garden-dynamic">
+    <span>{{=value.createTimeStr.substring(0,10)}}</span><span class="flow-cicle"></span><a class="dynamic-title" data-id="{{=value.id}}"><span class="flow-status">{{=value.title}}</span></a>
+    <!-- <span class="lead-flow"><a href="javascript:;" class="flow-download">带看流程.doc</a><i class="iconfont icon-xiazai"></i></span> -->
+    <div class="flow-desc clearfix"><span>{{=value.typeStr}}</span></div>
+    <div class="flow-line"></div>
+  </div>
+  {{?}} {{~}}
+  <!-- 分页 -->
+  <div id="pagination" class="pagination-box clearfix"></div>
+</div>
+{{?}}

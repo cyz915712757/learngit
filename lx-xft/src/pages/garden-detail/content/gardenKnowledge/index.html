@@ -1,0 +1,11 @@
+{{?it.list}}
+<div class="garden-common">
+  <p class="garden-common-title">转介宝典</p>
+  <hr/>
+  <div class="garden-turn">
+    {{~it.list :value}}
+    <p><a href="/newhouse-web/pub/service/download?url={{=encodeURIComponent(value.url)}}&fileName={{=encodeURIComponent(value.name)}}" data-url="{{=value.url}}" data-name="{{=value.name}}" class="garden-knowledge">{{=value.name}}</a><i class="iconfont icon-xiazai"></i></p>
+    {{~}}
+  </div>
+</div>
+{{?}}

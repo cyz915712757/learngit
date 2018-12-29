@@ -1,0 +1,102 @@
+.store-number {
+  background-color: #f2f2f2;
+  padding: 0 20px 10px;
+}
+
+.item {
+  display: none;
+}
+
+.item .login-error-message {
+  margin: 15px 10px;
+}
+
+/* .item .star {
+  margin-left: -35px;
+} */
+
+.cur {
+  display: block;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative .select {
+  position: absolute;
+  right: 0;
+}
+
+.m-sel .form-control {
+  border-radius: 0;
+  height: 40px;
+  border: none;
+  box-shadow: none;
+  padding-left: 10px;
+}
+
+.item .login-form-group {
+  margin: 0 0 10px;
+  width: 380px;
+}
+
+.item .login-form-group input {
+  width: 300px;
+}
+
+.item p label {
+  color: #999;
+  margin: 0;
+  display: flex;
+  font-weight: normal;
+  align-items: center;
+}
+
+.company-name {
+  padding-left: 20px;
+  color: #333;
+}
+
+.store-name {
+  padding-left: 20px;
+  color: #333;
+}
+
+.item p {
+  height: 42px;
+  line-height: 40px;
+  /* border: 1px solid #e9e9e9;
+  background-color: #f9f9f9;
+  padding: 0 0 0 20px; */
+}
+
+.item p input {
+  color: #333;
+  margin-left: 20px;
+  font-weight: normal;
+  padding-left: 10px;
+  height: 40px;
+  width: 80%;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.store-number-container {
+  width: 310px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+#selectType {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  line-height: 50px;
+}
+
+.tips {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  font-size: 10px;
+}

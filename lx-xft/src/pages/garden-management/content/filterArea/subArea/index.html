@@ -1,0 +1,10 @@
+<ul class="filter-list filter-sub-list clearfix js-filterSel dn
+" data-prop="areaId">
+  <li class="cur"><a href="javascript:;">不限</a></li>
+  {{~ it.childArea :subobj:subindex}}
+  <li>
+    <a href="javascript:;" data-v="{{!subobj.id}}"> <span class="section">{{!subobj.name}}</span>({{=subobj.gardenCount||0}})</a>
+  </li>
+  {{~}}
+</ul>
+

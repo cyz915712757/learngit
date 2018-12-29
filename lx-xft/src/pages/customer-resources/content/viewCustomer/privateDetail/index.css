@@ -1,0 +1,49 @@
+.person-info .btn-wrapper {
+  padding-top: 50px;
+  margin-left: 10px;
+}
+
+.person-info .detail-wrapper {
+  width: 425px;
+}
+
+.search-baidu {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  color: #00b4ed;
+  font-size: 12px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.search-baidu:hover,
+.search-baidu:focus {
+  text-decoration: none;
+  color: #00b4ed;
+}
+
+.search-baidu i {
+  vertical-align: middle;
+  font-size: 15px;
+  color: #00b4ed;
+  vertical-align: baseline;
+}
+
+.phone-status {
+  display: inline-block;
+  padding: 1px 5px;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 5px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.phone-status-empty {
+  background-color: #FF001F;
+}
+
+.phone-status-same {
+  background-color: #FF933B
+}

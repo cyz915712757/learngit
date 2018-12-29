@@ -1,0 +1,39 @@
+  <!-- <div class="data-box clearfix">
+    <div class="item item1 fl">
+      <div class="subitem pr">       
+        <div class="inner-con">
+          <p><span class="c-333 c-max">{{=it.storeCounts||0}}</span></p>
+          <p class="title js-change" data-type="store">分店</p>
+          <p class="title js-change cur" data-type="agent">经纪人</p>
+        </div>
+      </div>    
+    </div>
+    <div class="item item2 fr">
+      <div class="subitem pr">
+        <div class="inner-con">
+          <p><span class="c-333 c-max">{{=(it.occupieds+it.pauseds)||0}}</span></p>
+          <p class="title">经纪人</p>
+        </div>
+        <span class="v-line"></span>
+      </div>
+      <div class="subitem pr">
+        <div class="inner-con">
+          <p><span class="c-333">{{=it.occupieds||0}}</span></p>
+          <p class="title">使用中</p>
+        </div>
+        <span class="v-line"></span>
+      </div>
+      <div class="subitem pr">
+        <div class="inner-con">
+          <p><span class="c-333">{{=it.pauseds||0}}</span></p>
+          <p class="title">暂停</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="mtab-head main-content js-change">
+    <a data-type="agent" class="cur" href="javascript:;">经纪人<span id="agentNumber">{{!it.occupieds}}</span></a>
+    <a data-type="store" href="javascript:;">分店<span id="storeNumber">{{!it.storeCounts}}</span></a>
+  </div>
+  <div id="cgAgent"></div>
+  <div id="cgStore" class="dn"></div>

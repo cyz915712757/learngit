@@ -1,0 +1,16 @@
+<div class="card-block emloyee-box">
+  <div class="employee-list">
+    <div class="query-box clearfix">
+      <div class="query-item m-sel select auto" id="status"></div>
+      {{? it.station==='公司负责人'}}<div class="query-item m-sel select auto" id="storeSel"></div>{{?}}
+      <div class="select auto-copmlete auto" id="brokerName"></div>
+      <a class="m-btn m-ybtn" href="javascript:;" id="queryBtn">查询</a>
+      <a class="m-btn m-cbtn fl" href="javascript:;" id="resetBtn">重置</a>
+      {{?it.station==='公司负责人'&&it.companyType==='OUTREACH'}}<a class="dash-btn" href="javascript:;" id="addAccount">添加分店</a>{{?}}
+    </div>
+    <div class="employee-tbbox m-tb">
+      <div class="table-responsive" id="storeEmployeeTb"></div>
+    </div>
+    <div id="reportPag" class="pagination-box clearfix"></div>
+  </div>
+</div>

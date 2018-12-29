@@ -1,0 +1,54 @@
+.layui-layer-title {
+  height: 35px;
+}
+
+.success-tip-content {
+  padding: 35px 65px;
+}
+
+.success-tip-details {
+  width: 285px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.success-tip-details .message {
+  margin-top: 20px;
+  color: #333;
+  font-size: 16px;
+}
+.success-tip-details .btn-box{
+width:200px;
+margin: 0 auto;
+}
+.success-tip-details .iconfont {
+  font-size: 50px;
+  color: #47c447;
+  margin-bottom: 20px;
+}
+
+.success-tip-details a.close-btn {
+  color: #fff;
+  display: inline-block;
+  *display: inline;
+  *zoom:1;width: 70px;
+  height: 30px;
+  line-height: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #00b4ed;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.success-tip-details a.close-btn:hover,
+.success-tip-details a.close-btn:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.success-tip-details p {
+  font-size: 16px;
+}

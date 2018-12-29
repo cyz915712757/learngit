@@ -1,0 +1,461 @@
+.card-wrapper {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1000px;
+  height: 255px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: -1px 0 3px #ededed, 1px 0 3px #ededed, 0 -1px 4px #f2f2f2, 0 3px 8px #ededed;
+}
+
+.statis-bar-wrapper,
+.statis-pie-wrapper {
+  width: 470px;
+  height: 185px;
+  box-shadow: -1px 0 3px #ededed, 1px 0 3px #ededed, 0 -1px 4px #f2f2f2, 0 3px 8px #ededed;
+  float: left;
+}
+
+.statis-pie-wrapper {
+  margin-left: 10px;
+}
+
+.statis-bar-wrapper ul {
+  margin: 0 auto;
+  border: 1px solid #e9e9e9;
+  width: 380px;
+  height: 100px;
+  margin-top: 40px;
+  border-top: 0;
+}
+
+.statis-bar-wrapper li {
+  height: 20px;
+  border-top: 1px dotted #e9e9e9;
+}
+
+.statistics-bar {
+  position: relative;
+}
+
+.statistics-bar .bar-item {
+  width: 30px;
+  background-color: #00b4ed;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+}
+
+.statistics-bar .statis-success {
+  left: 90px;
+}
+
+.statistics-bar .statis-lead {
+  left: 210px;
+}
+
+.statistics-bar .statis-deal {
+  left: 320px;
+}
+
+.bar-item .statis-desc {
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  background-color: #5c5c5c;
+  position: absolute;
+  top: -35px;
+  right: -18px;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.bar-item .down-arrow {
+  position: absolute;
+  top: -10px;
+  right: 12px;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #5c5c5c;
+}
+
+.bar-item .statis-title {
+  bottom: -30px;
+  position: absolute;
+  width: 57px;
+  color: #999;
+  right: -15px;
+  font-size: 12px;
+}
+
+.bar-item .special-title {
+  right: -22px;
+}
+
+
+/* 饼图样式*/
+
+#statisticsPie {
+  width: 155px;
+  height: 155px;
+  display: inline-block;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+.desc-statis-wrapper {
+  float: right;
+  margin-left: 25px;
+}
+
+.desc-statis {
+  width: 150px;
+  height: 62px;
+  background-color: #f9f9f9;
+  color: #999;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+.desc-statis i {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: text-top;
+}
+
+.desc-statis span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+}
+
+.desc-statis p {
+  color: #999;
+  margin-left: 20px;
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.part-statis.current span {
+  color: #7460ee;
+}
+
+.part-statis i {
+  background-color: #7460ee;
+}
+
+.ready-statis.current span {
+  color: #00afec;
+}
+
+.ready-statis i {
+  background-color: #00afec;
+}
+
+.already-statis.current span {
+  color: #66cd2e;
+}
+
+.already-statis i {
+  background-color: #66cd2e;
+}
+
+.already-statis p {
+  border: none;
+}
+
+
+/* tab切换样式 */
+
+.my-deal-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.item-title {
+  background-color: #f9f9f9;
+}
+
+.item-title li {
+  float: left;
+}
+
+.item-title li.current a {
+  background-color: #fff;
+  border-top: 2px solid #00b4ed;
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+  border-bottom: 0;
+  color: #333;
+  height: 28px;
+  line-height: 28px;
+}
+
+.item-title a {
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  width: 120px;
+  text-decoration: none;
+  color: #999;
+  border-bottom: 1px solid #e9e9e9;
+  font-size: 12px;
+}
+
+a.null-link {
+  width: 760px;
+  border-bottom: 1px solid #e9e9e9;
+  cursor: default;
+}
+
+.my-deal-wrapper .s-btn {
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  width: 80px;
+  background: #00b4ed;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+
+.my-deal-wrapper a.date-inBox {
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  border: 1px solid #e9e9e9;
+}
+
+.my-deal-wrapper a.date-tip {
+  float: right;
+  font-size: 12px;
+  color: #999;
+  border: 0;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.my-deal-wrapper a.date-text {
+  color: #333;
+  border: 0;
+  cursor: default;
+  margin-right: 10px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+}
+
+.my-deal-wrapper a.item {
+  width: 92px;
+  color: #999;
+  margin-right: 10px;
+}
+
+.my-deal-wrapper a.item.cur {
+  color: #00b4ed;
+  border: 1px solid #00b4ed;
+}
+
+.my-deal-wrapper a.date-inBox {
+  width: 140px;
+}
+
+.my-deal-wrapper .date-inBox {
+  margin-right: 10px;
+}
+
+.my-deal-wrapper .date-inBox input.form-control {
+  width: 100%;
+  height: 30px;
+  padding: 0 0 0 15px;
+  display: inline-block;
+  border: none;
+  color: #333;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.my-deal-wrapper .date-inBox input::-webkit-input-placeholder {
+  color: #333;
+}
+
+.my-deal-wrapper .date-inBox input:-moz-placeholder {
+  color: #333;
+}
+
+.my-deal-wrapper .date-inBox .iconfont {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #9f9f9f;
+}
+
+.my-deal-wrapper .select .glyphicon-remove {
+  top: 1px;
+  height: 25px;
+}
+
+.statis-keyword {
+  width: 230px;
+  height: 30px;
+  padding-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #e9e9e9;
+  font-size: 12px;
+}
+
+.statis-status input {
+  height: 30px;
+  width: 200px;
+  border-radius: 0;
+  border: 1px solid #e9e9e9;
+  font-size: 12px;
+}
+
+.statis-status .select-menu a {
+  font-size: 12px;
+}
+
+.store-tbbox {
+  margin: 20px 0
+}
+
+
+.sum-box{
+  margin: 20px auto;
+  width: 1000px;
+  background: #fff;
+  padding: 20px 0;
+  padding-bottom: 0;
+}
+
+/* 从属经纪人 */
+
+.store-query{
+  margin: 20px auto;
+}
+
+.store-query .date-box>a {
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.store-query .date-box a.item {
+  border: 1px solid #e9e9e9;
+}
+
+.store-query .date-box a.date-tip {
+  font-size: 12px;
+  color: #999;
+  border: 0;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.store-query .date-box a.date-tip span {
+  font-weight: bold;
+  color: #00b4ed;
+}
+
+.store-query .date-box a.date-text {
+  color: #333;
+  border: 0;
+  cursor: default;
+  margin-right: 10px;
+}
+
+.store-query .date-box a.item {
+  width: 92px;
+  color: #999;
+  margin-right: 10px;
+}
+
+.store-query .date-box a.item.cur {
+  color: #00b4ed;
+  border: 1px solid #00b4ed;
+}
+
+
+/* list */
+
+
+
+.store-query a.date-btn {
+  height: 30px;
+  line-height: 30px;
+  border: 0;
+}
+
+
+.store-query .store-query{
+  margin: 20px auto
+}
+
+
+.store-query .date-inBox input.form-control {
+  font-size: 12px;
+}
+
+.store-query .keyword {
+  font-size: 12px;
+  width: 170px;
+  padding-left: 15px;
+  border: 1px solid #e9e9e9;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+}
+
+.store-query .m-btn {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin-left: 10px
+}
+
+.sum-tb {
+  padding: 20px 20px 0
+}
+
+.store-query .auto .form-control {
+  width: 150px;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
+  border-radius: 0;
+  border: 1px solid #e9e9e9;
+  box-shadow: none
+}
+
+.store-query .auto {
+  float: left;
+  clear: none;
+}
+
+
+
+
+

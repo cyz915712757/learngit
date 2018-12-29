@@ -1,0 +1,22 @@
+<div class="garden-common">
+    <p class="garden-common-title">分销规则</p>
+    <hr/>
+    <ul class="distribution clearfix">
+      <li class="current"><a href="javascript:;">客户转介</a></li>
+      <li><a href="javascript:;">结算佣金说明</a></li>
+      <li><a href="javascript:;">带看流程</a></li>
+      <li><a href="javascript:;">CALL客词</a></li>
+      <li><a href="javascript:;">推广语</a></li>
+    </ul>
+    <div class="distribution-item">
+    <p class="distri-report">
+      <span>报 备 联 系 人</span>{{~it.contacters :value}}<span class="distri-person">{{=value.name}}（{{=value.phone}}）</span>{{~}}
+    </p>
+    <p class="distri-report"><span>报备注意事项</span>{{=it.reserveAttention ||''}}</p>
+    <p class="distri-report"><span>带 看 保 护 期</span>{{? it.protectionPeriod}}{{=it.protectionPeriod ||''}}天{{?}}</p>
+    </div>
+    <div class="distribution-item dn">{{=it.commissionRemark}}</div>
+    <div class="distribution-item dn">{{=it.lookProcess}}</div>
+    <div class="distribution-item dn">{{=it.callWords}}</div>
+    <div class="distribution-item dn">{{=it.promotes}}</div>
+  </div>

@@ -1,0 +1,26 @@
+<div class="garden-direct">
+  <p class="garden-direct-title">直推房源</p>
+  <span class="layui-layer-setwin"><a class="close-direct" href="javascript:;"><i class="iconfont icon-baocuo2"></i></a></span>
+  <div class="direct-item-wrapper">
+    {{~it.list :value:index}}
+    <div class="garden-direct-item clearfix">
+      <img src="{{!value.image}}" width="120" height="90" />
+      <div class="direct-room-desc">
+        <ul class="house-type clearfix">
+          {{~value.houseType.split(',') :house}}
+          <li>{{=house.split(':')[0]}}: <span class="house-type-detail">{{=house.split(':')[1]}}</span></li>
+          {{~}}
+        </ul>
+        <p class="see-count">该房源已被客户查看{{=value.count}}次</p>
+        <a data-track="直推房源详情" href="javascript:;" target="_blank" class="preview-btn" data-url="{{=value.url}}">预览</a> <span class="share-to">分享至：</span>
+        <a href="javascript:;" class="share-weixin"><i class="iconfont icon-weixin"></i></a>
+        <a data-track="QQ分享" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url={{=value.url}}&title='{{=it.gardenName}}'&summary={{!value.houseType}}&pics='{{!value.image}}'&desc='asdf'" class="share-qq"><i class="iconfont icon-qq"></i></a>
+        <div class="weixin-code dn" data-url="{{=value.url}}">
+          <img src="" width="90" height="90">
+        </div>
+        <div class="qq-code dn"></div>
+      </div>
+    </div>
+    {{~}}
+  </div>
+</div>

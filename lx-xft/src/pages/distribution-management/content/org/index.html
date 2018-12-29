@@ -1,0 +1,45 @@
+<!--从属经纪人 -->
+<div class="company">
+  <div class="card-block company-query clearfix">
+    <!-- query start -->
+    <div class="date-box fl clearfix" id="dateSel">
+      <a class="date-inBox pr" href="javascript:;">
+        <input id="startDate" class="form-control" type="text" placeholder="起始日期" readonly><i class="iconfont icon-riqi js-dicon"></i></a>
+      <a href="javascript:;" class="date-text">至</a>
+      <a class="date-inBox pr" href="javascript:;">
+        <input id="endDate" class="form-control" type="text" placeholder="结束日期" readonly><i class="iconfont icon-riqi js-dicon"></i></a>
+    </div>
+    <div class="select auto" id="brokerName"></div>
+    <input class="query-item keyword" id="gardenName" type="text" placeholder="楼盘名称">
+    <a class="m-btn m-ybtn" href="javascript:;" id="queryBtn">查询</a>
+    <a class="m-btn m-cbtn fl" href="javascript:;" id="resetBtn">重置</a>
+  </div>
+  <!-- query end -->
+
+  <div class="card-block sum-box">
+    <div id="summary"> </div>
+    <!--申请结佣 只有外联公司负责人有-->
+     {{?it.positionFlag===3}}
+    <div class="apply-paidbox clearfix" id="applyPaid">
+    </div>
+    {{?}}
+    <!-- tab start
+    营销总监有成交  分店业绩  报备明细
+    营销经理 店长有成交  报备明细
+    公司负责人有成交  结算记录 报备明细  分店业绩
+     -->
+    <div class="sum-list">
+      <div class="sum-head clearfix more" id="sumHead"> <a href="javascript:;" class="cur item" data-type="deal">成交</a>
+        {{?it.positionFlag===3}}
+        <a href="javascript:;" class="item" data-type="settle">结算</a>
+        {{?}}
+        {{?it.positionFlag===2||it.positionFlag===3}}
+        <a href="javascript:;" class="item" data-type="store">分店业绩</a>
+        {{?}}
+        <a href="javascript:;" class="item" data-type="report">报备明细</a>
+      </div>
+      <div id="comList"> </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,22 @@
+<!-- list -->
+<div class="list-box">
+    <div class="query-box clearfix">
+        <ul class="status-wrapper fl clearfix">
+            <li class="status-item status-flag">状态:</li>
+            <li class="status-item current" data-status=""><a href="javascript:;" class="">全部</a></li>
+            <li class="status-item" data-status="BACKLOG"><a href="javascript:;" class="">报备待确认</a></li>
+            <li class="status-item" data-status="NO"><a href="javascript:;" class="">待带看</a></li>
+            <li class="status-item" data-status="GUIDE"><a href="javascript:;" class="">已带看</a></li>
+            <li class="status-item" data-status="OVERDUE"><a href="javascript:;" class="">已过期</a></li>
+        </ul>
+        <div class="fr">
+            <input type="text" class="statis-keyword fl" id="reportKeyword" placeholder="报备客户名称/客户电话">
+            <a class="fl s-btn" id="reportSearchBtn" href="javascript:;">搜索</a>
+            <a class="fl s-btn r-btn js-report-reset" href="javascript:;">重置</a>
+        </div>
+    </div>
+    <div class="store-tbbox m-tb">
+        <div class="table-responsive" id="reportStoreTb"></div>
+    </div>
+    <div id="reportPage" class="pagination-box clearfix"></div>
+</div>

@@ -1,0 +1,25 @@
+.filter-box{
+  width:600px;
+  margin:0 auto;
+  background:#fff;
+  padding:60px 10px;
+  text-align:center;
+  font-size:16px;
+  color:#999
+}
+.filter-title{
+ color:#333;
+ font-size:18px;
+}
+.filter-title i{
+  color:#00b4ed;
+  font-size:24px
+}
+.filter-title span{
+  font-weight: bold;
+}
+.filter-ewm{
+ width:180px;
+ height:180px;
+ margin:30px auto 14px;
+}

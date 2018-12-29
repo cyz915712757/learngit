@@ -1,0 +1,12 @@
+node_modules
+dist
+mock
+.happypack
+.DS_Store
+*.log
+xinfang-xft
+xinfang-xft.zip
+lxnewhouse
+lxnewhouse.zip
+*.log
+.vscode

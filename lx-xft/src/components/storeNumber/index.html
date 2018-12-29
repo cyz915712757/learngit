@@ -1,0 +1,68 @@
+<div class="store-number">
+  <div class="type" id="selectType">
+    <span>绑定方式</span>
+    <span>
+      <input type="radio" name="bindType" value="input" checked /> 分店码
+    </span>
+
+    <span>
+      <input type="radio" name="bindType" value="select" /> 手动选择分店
+    </span>
+  </div>
+  <div class="main">
+    <div class="item cur">
+      <div class="login-form-group relative">
+        {{?it.isRequired}}
+        <span class="star">*</span>
+        {{?}}
+        <label>
+          分店码
+        </label>
+        <input class="select" id="getCompanyName" type="text" maxlength="6" placeholder="请输入6位分店码">
+      </div>
+
+      <div class="login-form-group ">
+        <label>
+          分店
+        </label>
+        <span class="store-name"></span>
+
+      </div>
+      <div class="login-form-group ">
+        <label>
+          公司
+        </label>
+        <span class="company-name"></span>
+
+      </div>
+    </div>
+
+    <div class="item">
+
+      <div class="login-form-group relative">
+        {{?it.isRequired}}
+        <span class="star">*</span>
+        {{?}}
+        <label>公司</label>
+        <div class="query-item m-sel select" id="companySelect"></div>
+      </div>
+
+      <div class="login-form-group relative">
+        {{?it.isRequired}}
+        <span class="star">*</span>
+        {{?}}
+        <label>分店</label>
+        <div class="query-item m-sel select" id="storeSelect"></div>
+      </div>
+
+      <div class="login-form-group relative">
+        <label>分店码</label>
+        <div class="select store-number-container"></div>
+      </div>
+
+    </div>
+    {{?it.isTip}}
+    <p class="tips">为便于业务开展，建议您绑定分店</p>
+    {{?}}
+
+  </div>

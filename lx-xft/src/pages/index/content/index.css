@@ -1,0 +1,57 @@
+.page-wrap {
+  color: #333;
+  background: #f5f5f5;
+  padding-bottom: 20px;
+}
+
+.building-box {
+  width: 1000px;
+  margin: 20px auto 20px;
+  min-height: 440px;
+}
+
+.leading-head {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+a.switch-box {
+  text-decoration: none;
+}
+
+a.switch-box i {
+  font-weight: normal;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.building-shead,
+.leading-head {
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.building-introbox {
+  margin-top: 15px;
+}
+
+.left-box {
+  width: 720px;
+  float: left;
+}
+
+.right-box {
+  width: 260px;
+  margin-left: 20px;
+}
+
+.building-shead {
+  font-size: 14px;
+  color: #333;
+}
+
+#shoucangLayer{
+  background-color: #777;
+}

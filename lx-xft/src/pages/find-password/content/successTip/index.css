@@ -1,0 +1,57 @@
+.layui-layer-title {
+  height: 20px;
+}
+
+.success-tip-content {
+  padding: 35px 65px;
+}
+
+.success-tip-details {
+  width: 285px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.success-tip-details .message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.success-tip-details .real-message {
+  color: #999;
+}
+
+.success-tip-details .iconfont {
+  font-size: 50px;
+  color: #47c447;
+  margin-bottom: 20px;
+}
+
+.success-tip-details .close-btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 135px;
+  height: 45px;
+  line-height: 45px;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #00b4ed;
+  color: #00b4ed;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.success-tip-details a.close-btn:hover,
+.success-tip-details a.close-btn:focus {
+  color: #00b4ed;
+  text-decoration: none;
+}
+
+.success-tip-details p {
+  font-size: 16px;
+}

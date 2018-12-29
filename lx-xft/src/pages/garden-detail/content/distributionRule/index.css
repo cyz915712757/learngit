@@ -1,0 +1,45 @@
+.distribution li {
+  float: left;
+  margin-right: 12px;
+  font-size: 12px;
+  border: 1px solid #fff;
+}
+
+.distribution li.current {
+  border: 1px solid #e0e0e0;
+}
+
+.distribution li.current a {
+  color: #333;
+}
+
+.distribution li a {
+  text-decoration: none;
+  color: #888;
+  display: block;
+  height: 30px;
+  text-align: center;
+  padding: 8px 15px;
+}
+
+.distribution-item {
+  margin-top: 25px;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.distribution-item p span {
+  margin-right: 30px;
+}
+
+.distri-report {
+  margin-bottom: 10px;
+}
+
+.distri-report span {
+  color: #888;
+}
+
+.distri-person {
+  color: #333!important;
+}

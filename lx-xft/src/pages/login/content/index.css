@@ -1,0 +1,178 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.main-wrapper {
+  height: 976px;
+  padding-top: 20px;
+  background: url(img/login-medium-bg-new.jpg) no-repeat center;
+}
+
+.login-logo {
+  background: url(./img/login-logo.png) no-repeat 50%;
+  height: 25px;
+  width: 235px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.login-address {
+  margin: 0 auto;
+  width: 520px;
+  margin-bottom: 25px;
+}
+
+.login-address a {
+  color: #000;
+}
+
+.login-wrapper {
+  width: 520px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 25px 50px 25px;
+}
+
+.login-title {
+  color: #333;
+}
+
+.login-flag {
+  font-size: 16px;
+  float: left;
+}
+
+a.login-company-account {
+  color: #333;
+  text-decoration: underline;
+}
+
+.login-company-account {
+  float: right;
+}
+
+.login-form-group {
+  width: 420px;
+  height: 53px;
+  line-height: 48px;
+  border: 1px solid #e9e9e9;
+  background-color: #f9f9f9;
+  margin: 20px 0;
+}
+
+.login-form-group i {
+  margin-left: 20px;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.login-form-group input {
+  width: 353px;
+  border: 0;
+  margin-left: 20px;
+  background-color: #f9f9f9;
+  height: 50px;
+  outline: none;
+}
+
+.login-form-group.code {
+  width: 282px;
+  float: left;
+}
+
+.login-form-group.code input {
+  width: 260px;
+}
+
+.login-option {
+  margin-top: 20px;
+}
+
+.remember-me {
+  float: left;
+  color: #999;
+}
+
+.auto-login {
+  width: 14px;
+  height: 14px;
+}
+
+a.forget-password {
+  float: right;
+  color: #333;
+  text-decoration: underline;
+}
+
+.login-btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 420px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #00b4ed;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+a.login-btn:hover,
+a.login-btn:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-footer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.go-apply {
+  color: #00b4ed;
+  text-decoration: underline;
+}
+
+.login-error-message {
+  line-height: 0;
+  color: #00b4ed;
+}
+
+.login-error-message i {
+  margin-right: 10px;
+}
+
+.dn {
+  display: none;
+}
+
+.get-code-btn {
+  width: 125px;
+  float: right;
+  background-color: #e0e0e0;
+  text-align: center;
+  color: #333;
+  line-height: 52px;
+  margin-top: 20px;
+}
+
+.footer {
+  margin: 0 auto;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  margin-top: -70px;
+}
+
+.white-user-agreement {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 12px;
+}

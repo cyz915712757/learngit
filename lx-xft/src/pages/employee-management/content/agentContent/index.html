@@ -1,0 +1,18 @@
+<div class="card-block emloyee-box">
+  <div class="employee-list">
+    <div class="query-box clearfix">
+      {{? it.station==='公司负责人'}}<div class="query-item m-sel select auto" id="storeSel"></div>{{?}}
+      <div class="select auto-copmlete auto" id="brokerName"></div>
+      <a class="m-btn m-ybtn" href="javascript:;" id="queryBtn">查询</a>
+      <a class="m-btn m-cbtn fl" href="javascript:;" id="resetBtn">重置</a>
+      {{?it.companyType==='OUTREACH'}}<a class="dash-btn" href="javascript:;" id="addAccount">添加经纪人</a>{{?}}
+      {{?it.newJoinCounts}}
+        <span class="new-title">本周你有<span id="newPeople">{{!it.newJoinCounts}}</span>个新加入员工,如信息有误请尽快修改或离职账号</span>
+      {{?}}
+    </div>
+    <div class="employee-tbbox m-tb">
+      <div class="table-responsive" id="employeeTb"></div>
+    </div>
+    <div id="reportPage" class="pagination-box clearfix"></div>
+  </div>
+</div>

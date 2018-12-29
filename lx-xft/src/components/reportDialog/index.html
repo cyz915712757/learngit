@@ -1,0 +1,53 @@
+<div class="report-dialog">
+  <div class="frm-item">
+    {{?it.hName}}
+    <input class="form-control" type="text" id="hName" data-type="hname" value="{{!it.hName}}" data-id="{{!it.hid}}" disabled> {{??}}
+    <div class="select" id="hName" data-type="hname"></div>
+    {{?}}
+  </div>
+  <div class="frm-item">
+    {{?it.cname}}
+    <input type="input" class="form-control js-frm" id="personName" data-type="pname" placeholder="客户姓名" value="{{!it.cname}}"
+      disabled> {{??}}
+    <input type="input" class="form-control js-frm" id="personName" data-type="pname" placeholder="客户姓名"> {{?}}
+  </div>
+
+  <div class="frm-item phone-container">
+    {{?it.phone}}
+    <input type="input" class="form-control js-frm" id="phone" data-type="phone" placeholder="客户手机" value="{{!it.phone}}" disabled>
+    <!--  -->
+    {{??}}
+
+    <div class="row-container">
+      {{?it.phoneType==='HK'}}
+      <span>客户号码（港澳）：</span>
+      {{??}}
+      <span>客户号码（大陆）：</span>
+      {{?}}
+      <span class="toggle-btn" id="togglePhone">
+        切换为港澳号码
+      </span>
+    </div>
+    <div id="phoneWrapper">
+
+    </div>
+    <!--  -->
+    {{?}}
+  </div>
+
+  <div class="frm-item date-inBox pr">
+    <input id="visitDate" class="form-control" type="text" placeholder="预计到访时间" readonly>
+    <!-- <i class="iconfont icon-guanbi js-reset" style="font-size:14px;top:1px;right:40px"></i> -->
+    <i class="iconfont icon-riqi js-dicon"></i>
+    </a>
+  </div>
+  <div class="ctrl-btbox clearfix">
+    <a id="reportSub" class="ok-btn fl js-ok" href="javascript:;">立即报备</a>
+    <a class="cancel-btn fr js-cancel" href="javascript:;">取消</a>
+  </div>
+  <div class="tip-container">
+    <p class="tip-box">系统将屏蔽部分手机号数字以保障您的客户信息安全</p>
+    <p class="tip-box">大陆：13866666666(11位)&nbsp;&nbsp;&nbsp; 港澳：0085288888888(13位)</p>
+  </div>
+
+</div>

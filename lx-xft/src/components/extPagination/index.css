@@ -1,0 +1,15 @@
+.pagination.ext{
+  width: 100%;
+}
+
+.ext #paginationButtonGroup {
+  margin-top: 5px;
+  margin-right: 5px;
+  float: right
+}
+
+.laypageskin_molv a,
+.laypageskin_molv span {
+  border-radius: 0;
+  line-height: 29px;
+}

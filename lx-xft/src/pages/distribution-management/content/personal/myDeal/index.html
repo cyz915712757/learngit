@@ -1,0 +1,21 @@
+<!-- list -->
+<div class="list-box">
+    <div class="query-box clearfix">
+        <ul class="status-wrapper fl clearfix">
+          <li class="status-item status-flag">状态:</li>
+          <li class="status-item current" data-status=""><a href="javascript:;" class="">全部</a></li>
+          <li class="status-item" data-status="BARGAIN_NON_PAIED"><a href="javascript:;" class="">待结算</a></li>
+          <li class="status-item" data-status="BARGAIN_PAIED"><a href="javascript:;" class="">已结算</a></li>
+          <li class="status-item" data-status="BARGAIN_PART_PAIED"><a href="javascript:;" class="">部分结算</a></li>
+          <li class="status-item" data-status="BARGAIN_CANCEL"><a href="javascript:;" class="">已撤单</a></li>
+        </ul>
+        <div class="fr">
+          <input type="text" id="dealKeyword" class="statis-keyword fl" placeholder="楼盘名称/客户名称/客户电话">
+          <a class="fl s-btn" id="searchBtn" href="javascript:;">搜索</a>
+          <a class="fl s-btn r-btn js-clear" href="javascript:;">重置</a>
+        </div>
+    </div>
+    <div class="store-tbbox m-tb">
+        <div class="table-responsive" id="dealTb"></div>
+    </div>
+</div>

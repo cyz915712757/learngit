@@ -1,0 +1,31 @@
+<p>个人分销汇总</p>
+<div class="statis-bar-wrapper">
+  <div id="statisticsBar" class="statistics-bar">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="bar-item statis-success" style="height:{{=(it.RESERVATION_SUCCESSFUL/it.maxValue)*100}}px"><span class="statis-desc">{{=it.RESERVATION_SUCCESSFUL || 0}}</span><span class="down-arrow"></span><span class="statis-title">报备成功</span></div>
+    <div class="bar-item statis-lead" style="height:{{=(it.GUIDE_SUCCESSFUL/it.maxValue)*100}}px"><span class="statis-desc">{{=it.GUIDE_SUCCESSFUL || 0}}</span><span class="down-arrow"></span><span class="statis-title">带看成功</span></div>
+    <div class="bar-item statis-deal" style="height:{{=(it.BARGAIN/it.maxValue)*100}}px"><span class="statis-desc">{{=it.BARGAIN || 0}}</span><span class="down-arrow"></span><span class="statis-title special-title">已成交</span></div>
+  </div>
+</div>
+<div class="statis-pie-wrapper">
+  <div id="statisticsPie"></div>
+  <div class="desc-statis-wrapper">
+    <ul>
+      <li class="desc-statis part-statis current"><i></i><span>{{=it.PART_PAIED || 0}}</span>
+        <p>部分结算</p>
+      </li>
+      <li class="desc-statis ready-statis"><i></i><span>{{=it.NON_PAIED || 0}}</span>
+        <p>待结算</p>
+      </li>
+      <li class="desc-statis already-statis"><i></i><span>{{=it.PAIED || 0}}</span>
+        <p>已结算</p>
+      </li>
+    </ul>
+  </div>
+</div>

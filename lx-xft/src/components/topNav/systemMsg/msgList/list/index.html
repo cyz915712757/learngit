@@ -1,0 +1,43 @@
+{{?it.items&&it.items.length}}
+  <ul class="msg-list">
+    {{~ it.items :obj}}
+    <li class="msg-item" data-id="{{!obj.id}}">
+      <div class="msg-head">
+        转客通知
+        <a class="js-del del-box fr" href="javascript:;">
+          <i class="iconfont icon-guanbi"></i>
+         </a>
+      </div>
+      <div class="msg-con">
+        <p class="msg-text">
+          {{!obj.message}}
+          <a href="{{!obj.url}}">{{!obj.url}}</a>
+        </p>
+        <p class="msg-time">{{!obj.creator}}<span>{{?obj.createTime}}{{!obj.createTime.substring(0, 10)}}{{?}}</span> </p>
+      </div>
+    </li>
+    {{~}}
+    <!-- <li class="msg-item">
+      <div class="msg-head">
+        转客通知
+        <a class="js-del del-box fr" href="javascript:;">
+          <i class="iconfont icon-guanbi"></i>
+         </a>
+      </div>
+      <div class="msg-con">
+        <p class="msg-text">
+          经理于8月20日分配5名新客户至“我的私客”，详情请进入<span> “我的私客”</span>中点击查看:
+          <a href="customer-resources.html">http://xf.test.qfang.com/customer-resources1</a>
+        </p>
+        <p class="msg-time">杨德猛<span>2017-08-20</span> </p>
+      </div>
+    </li>
+   -->
+  </ul>
+  {{?}}
+  <!-- 无消息 -->
+  {{?(!it.initFlag)&&(!it.items.length)}}
+  <div class="msg-no"><i class="iconfont icon-fabuxuqiuwushuju"></i>
+    <p>最近没有收到新消息</p>
+  </div>
+  {{?}}

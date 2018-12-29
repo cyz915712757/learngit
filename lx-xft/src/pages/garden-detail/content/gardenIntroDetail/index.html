@@ -1,0 +1,111 @@
+<div class="garden-title clearfix">
+  <div class="garden-price-wrapper">
+    <span class="garden-name-flag">{{!it.sellStatus}}</span>
+    <span id="cusGardenName" class="garden-name">{{!it.name}}</span> 均价 {{?it.avgPrice}}
+    <span class="garden-price-unit">{{!it.avgPrice}} 元/平米</span>{{??}}
+    <span class="garden-price-unit">均价待定</span>{{?}}
+  </div>
+  <div class="garden-share">
+    <a href="javascript:;" class="share-shoucang" data-track="关注">
+      <i class="iconfont {{!it.isAttentioned ? 'icon-shoucang':'icon-weishoucang'}}"></i>
+      <span class="js-attention">{{!it.isAttentioned ? '已添加':'添加至首页'}}</span>
+    </a>
+    <a href="javascript:;" class="share-fenxiang">
+      <i class="iconfont icon-fenxiang"></i>
+      <span class="js-share">分享此盘</span>
+    </a>
+  </div>
+</div>
+<div class="garden-price clearfix">
+  {{?it.maxRetio || it.fixed}} {{?it.maxRetio && !it.fixed}}
+  <div class="garden-price-col commsion">
+    <span class="garden-price-title">佣金</span>
+    <span class="garden-price-amount">
+      {{!it.maxRetio}}%
+    </span>
+  </div>
+  {{?}} {{?it.maxRetio && it.fixed}}
+  <div class="garden-price-col commsion">
+    <span class="garden-price-title">佣金</span>
+    <span class="garden-price-amount">
+      <!--{{?it.maxRetio && it.maxRetio!==it.minRetio}}
+                {{!it.minRetio}}%-{{!it.maxRetio}}%
+            {{??it.maxRetio && it.maxRetio===it.minRetio}}
+                {{!it.maxRetio}}%
+            {{??}}
+                0%
+            {{?}}-->
+      {{!it.maxRetio}}%
+    </span>
+  </div>
+  <div class="garden-price-col commsion">
+    <span class="garden-price-title" style="color: #00b4ed;font-size:18px;margin-left: -4px;">+</span>
+    <span class="garden-price-amount">{{!it.fixed}}</span>
+    <span class="garden-price-unit">元</span>
+  </div>
+  {{?}} {{?it.fixed && !it.maxRetio}}
+  <div class="garden-price-col commsion" style="margin-right: 20px;width: 150px">
+    <span class="garden-price-title">定佣</span>
+    <span class="garden-price-amount">{{!it.fixed}}</span>
+    <span class="garden-price-unit">元</span>
+  </div>
+  {{?}} {{??}}
+  <div class="garden-price-col desc">
+    <span class="garden-price-title">佣金请参阅分销规则或联系案场</span>
+  </div>
+  {{?}} {{?it.cash}}
+  <div class="garden-price-col cash-bonus">
+    <span class="garden-price-title">现金奖</span>
+    <span class="garden-price-amount">{{=it.cash || 0}}</span>
+    <span class="garden-price-unit">元</span>
+  </div>
+  {{?}} {{?it.maxRetio || it.fixed}}
+  <a href="javascript:;" class="view-action" data-expand="{{!it.expandId}}" data-type="{{=it.maxRetio ? '佣金':'定佣'}}">
+    查看{{=it.flagLength}}个方案>
+  </a>
+  {{?}} {{?it.pos===1}}
+  <div class="garden-price-col report">
+    <a data-track="报备" href="javascript:;" class="report-ready">报备</a>
+  </div>
+  {{?}}
+</div>
+<div class="garden-items-wrapper">
+  <div class="garden-time">
+    <span class="garden-time-title">分销时间</span>
+    <span class="left-space">{{!it.distributionStartDate}}</span>
+    <span class="right-space">至</span>{{!it.distributionEndDate}}</div>
+  <ul class="clearfix">
+    <li class="garden-items">
+      <span class="garden-items-key">开盘时间</span>{{!it.openDate}}</li>
+    <li class="garden-items">
+      <span class="garden-items-key">入住时间</span>{{!it.liveDate}}</li>
+    <li class="garden-items">
+      <span class="garden-items-key">物业类型</span>{{!it.propertyType}}</li>
+  </ul>
+  <ul class="clearfix">
+    <li class="garden-items address">
+      <span class="garden-items-key">项目地址</span>{{!it.address}}</li>
+  </ul>
+</div>
+<div class="garden-phone">
+  <ul class="clearfix">
+    <li class="garden-items">
+      <span class="garden-items-key">合作经纪人</span>{{=it.distributionNum ||0}}人</li>
+    <li class="garden-items">
+      <span class="garden-items-key">意向客户</span>{{=it.intentUser || 0}}人</li>
+  </ul>
+  <div class="clearfix">
+    <p class="garden-phone-person fl">联系案场</p>
+    <ul class="garden-phone-content clearfix fl">
+      {{~it.contacters :value}}
+      <li class="garden-phone-item">
+        <i class="iconfont icon-dianhua"></i>
+        <div class="line-contact">
+          <span class="garden-phone-person">{{=value.split(',')[1]}}</span>
+          <span class="garden-phone-phone">{{=value.split(',')[2]}}</span>
+        </div>
+      </li>
+      {{~}}
+    </ul>
+  </div>
+</div>

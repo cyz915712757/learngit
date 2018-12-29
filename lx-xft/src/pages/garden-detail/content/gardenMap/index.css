@@ -1,0 +1,170 @@
+.map-container {
+  width: 610px;
+  height: 355px;
+  float: left;
+}
+
+.map-result {
+  float: right;
+  width: 350px;
+}
+
+.map-title {
+  height: 45px;
+  line-height: 45px;
+  background-color: #00b4ed;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.map-result-item {
+  border-bottom: 1px solid #e9e9e9;
+  cursor: pointer;
+  padding: 10px 25px 0 25px;
+}
+
+.bus-info {
+  position: relative;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.bus-index {
+  position: absolute;
+  color: #fff;
+  left: 5px;
+  top: -2px;
+  width: 18px;
+  float: left;
+  text-align: center;
+}
+
+.icon-dingwei {
+  font-size: 28px;
+  color: #ff9912;
+  float: left;
+  color: #ff9912;
+}
+
+.bus-name {
+  float: left;
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
+  width: 185px;
+}
+
+.bus-distance {
+  float: right;
+  color: #333;
+}
+
+.bus-line {
+  padding-left: 38px;
+  color: #999;
+  font-size: 12px;
+}
+
+.map-container .garden-name,
+.map-container .garden-distance {
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 5px;
+  font-size: 12px;
+  background-color: #00b4ed;
+  border-radius: 3px;
+  white-space: nowrap;
+  position: absolute;
+}
+
+.map-container .garden-distance {
+  font-size: 14px;
+}
+
+.garden-item-marker {
+  position: relative;
+}
+
+.garden-item-marker i {
+  width: 21px;
+  height: 29px;
+  line-height: 30px;
+}
+
+.garden-item-marker .garden-num {
+  position: absolute;
+  right: -3px;
+  top: 3px;
+  color: #fff;
+  width: 20px;
+  text-align: center;
+}
+
+.marker-highlight {
+  color: #00b4ed;
+}
+
+.bus-item-current {
+  cursor: default;
+}
+
+.map-main {
+  position: relative;
+}
+
+.map-type-wrapper li {
+  float: left;
+}
+
+.map-type-wrapper li.current a {
+  color: #00b4ed;
+  background-color: #f4f4f4;
+}
+
+.map-type-wrapper {
+  position: absolute;
+  z-index: 9999;
+  top: 20px;
+  left: 60px;
+}
+
+.map-type-wrapper .map-type {
+  text-decoration: none;
+  padding: 10px 18px;
+  background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  border-right: 1px solid #ddd;
+}
+
+.type-name {
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 20px;
+  background-color: #f5f5f5;
+}
+
+.map-result-detail {
+  height: 290px;
+  overflow: scroll;
+  position: relative;
+}
+
+.map-result-detail .empty-data {
+  text-align: center;
+  line-height: 100px;
+}
+
+.map-container .down-arrow {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 0;
+  margin-left: -4px;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #00b4ed;
+}

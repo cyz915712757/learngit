@@ -1,0 +1,36 @@
+<!--添加账号和修改资料共用模块-->
+<form class="edit-fm">
+  <div class="form-group clearfix">
+    <label for="bname"><span>*</span>分店名称：</label>
+    <input id="bname" type="text" class="form-control" value="{{=it.item.name||''}}">
+  </div>
+  <div class="form-group clearfix">
+    <label for="phone">分店电话：</label>
+    <input id="phone" type="text" class="form-control" value="{{=it.item.tel||''}}">
+  </div>
+  <!--<div class="form-group clearfix">
+    <label for=""><span>*</span>分店：</label>
+    <input id="" type="text" class="form-control">
+  </div>-->
+  <div class="form-group clearfix">
+    <label for="city"><span>*</span>城市：</label>
+    <div id="city" class="select"></div>
+  </div>
+  <div class="form-group clearfix">
+    <label for="area"><span>*</span>区域：</label>
+    <div id="area" class="select" disabled></div>
+    <span id="cityTip">请选择城市！</span>
+  </div>
+  <div class="form-group clearfix">
+    <label for="pianqu"><span>*</span>片区：</label>
+    <div id="pianqu" class="select"></div>
+    <span id="areaTip">请选择区域！</span>
+  </div>
+  <div class="form-group clearfix">
+    <label for="address"><span>*</span>详细地址：</label>
+    <input id="address" type="text" class="form-control" value="{{=it.item.address||''}}">
+  </div>
+</form>
+<div class="detail-btn btn-box clearfix">
+  <button type="button" class="fm-btn m-btn m-ybtn fr" id="edit">确定</button>
+</div>

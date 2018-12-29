@@ -1,0 +1,19 @@
+<div class="garden-photo-detail">
+  <ul class="clearfix">
+    {{~it.list :value}}
+    <li class="{{?it.type=== value.typeStr}}current{{?}}"><a href="javascript:;" data-type="{{=value.typeStr}}">{{=value.typeStr}}({{=value.count}})</a></li>
+    {{~}}
+  </ul>
+  <div class="photo-detail-preview">
+    {{~it.list :value:index}} {{~value.urls :url}}
+    <div class="layout-photo-detail-wrapper">
+      <div class="layout-img-parent-wrapper">
+        <div class="layout-img-wrapper">
+          <img src="{{=url.url}}" data-type="{{=value.typeStr}}" />
+        </div>
+      </div>
+    </div>
+    {{~}} {{~}}
+  </div>
+  <p class="num-desc"><span class="num-index">1</span>/{{!it.count}}</p>
+</div>

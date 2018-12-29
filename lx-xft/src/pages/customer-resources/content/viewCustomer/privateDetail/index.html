@@ -1,0 +1,26 @@
+<div class="detail-wrapper fl">
+  <p>
+    <span class="username"><label>姓名 :</label>{{!it.customerName}}</span>
+    <span class="telphone"><label>手机 :</label><strong>{{!it.phone}}</strong></span>
+    {{? (it.type === 'public' || it.type === 'resources') && it.markedTypes.length>0}}
+      {{~ it.markedTypes :value}}
+        <span class="phone-status {{= value.code ==='EMPTY_NUMBER'? 'phone-status-empty':'phone-status-same'}}">{{!value.desc}}{{!value.count}}</span>
+      {{~}}
+    {{?}}
+    <a href="http://www.baidu.com/s?word={{!it.phone}}" title="百度一下" target="_blank" class="search-baidu" style="display:none"><i class="iconfont icon-sousuo"></i></a>
+    <span><label>来自 :</label>{{!it.source}}</span>
+  </p>
+  <p><span><label>分组 :</label>{{!it.customerGroupName}}</span></p>
+  <p><span><label>意向 :</label>{{!it.privateIntation}}</span></p>
+  <p><span><label>备注 :</label>{{!it.remark}}</span></p>
+</div>
+<div class="btn-wrapper fr">
+  {{?!it.typeDetail && it.type === 'private'}}
+    <a href="javascript:;" class="view-btn view-info-btn js-edit">编辑</a>
+    <a href="javascript:;" class="view-btn view-info-btn js-change-public">转公</a>
+    {{?it.dialFlag==='Y'}}<a href="javascript:;" class="view-btn view-info-btn js-dial">拨号</a>{{?}}
+  {{??it.type === 'public' || it.type==='resources'}}
+    <a href="javascript:;" class="view-btn view-info-btn js-change-private">转私</a>
+    {{?it.dialFlag==='Y'}}<a href="javascript:;" class="view-btn view-info-btn js-dial">拨号</a>{{?}}
+  {{?}}
+</div>

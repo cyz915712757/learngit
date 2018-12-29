@@ -1,0 +1,22 @@
+.garden-info {
+  font-size: 12px;
+}
+
+.garden-info tr {
+  line-height: 26px;
+}
+
+.garden-info th {
+  color: #888;
+  width: 85px;
+}
+
+.garden-info td {
+  width: 290px;
+}
+
+.garden-info .long-text {
+  width: 270px;
+  margin-right: 20px;
+  cursor: pointer;
+}

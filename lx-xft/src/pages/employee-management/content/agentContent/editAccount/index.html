@@ -1,0 +1,44 @@
+<!--添加账号和修改资料共用模块-->
+<form class="edit-fm">
+  <div class="form-group clearfix">
+    <label for="bname"><span>*</span>姓名：</label>
+    <input id="bname" type="text" class="form-control" value="{{=it.item.name||''}}">
+  </div>
+  <div class="form-group clearfix">
+    <label for="phone"><span>*</span>手机号：</label>
+    <input id="phone" type="text" class="form-control" value="{{=it.item.userName||''}}">
+  </div>
+  <div class="form-group clearfix">
+    <label for="idCard">身份证：</label>
+    <input id="idCard" type="text" class="form-control" value="{{=it.item.idCardNo||''}}">
+  </div>
+  <!--<div class="form-group clearfix">
+    <label for=""><span>*</span>分店：</label>
+    <input id="" type="text" class="form-control">
+  </div>-->
+  <div class="form-group clearfix">
+    <label for="store"><span>*</span>分店：</label>{{?it.item.txtStoreName}}
+    <input id="store" type="text" class="form-control" data-id="{{=it.item.storeId}}" value="{{=it.item.txtStoreName||''}}" disabled> {{??}}
+    <div id="store" class="select"></div>{{?}}
+  </div>
+  <div class="form-group clearfix">
+    <label for="storeNumber"><span>*</span>分店码：</label>
+    <input id="storeNum" type="text" class="form-control" value="{{=it.item.storeNumber||it.item.storeNum||''}}" disabled>
+  </div>
+  <div class="form-group clearfix">
+    <label for="position"><span>*</span>岗位：</label>
+    <div id="position" class="select"></div>
+  </div>
+  <!-- <div class="form-group clearfix">
+    <label for="">上传头像：</label>
+    <div id="" class="upload-outbox pr">
+      <div class="preview-box">{{?it.item.showPhotoUrl}}<img src="{{=it.item.showPhotoUrl||''}}" id="avatarUploadImg">{{??}}<img id="avatarUploadImg" class="dn">{{?}}
+      </div>
+      <div class="avatar-uploadbox"><i class="iconfont icon-tianjia"></i><input type="file" name="avatarUpload" class="avatar-upload " id="avatarUpload"></div>
+      <p class="upload-tip">仅支持JPG、PNG、JPEG格式，小于5M的图片</p>
+    </div>
+  </div> -->
+</form>
+<div class="detail-btn btn-box clearfix">
+  <button type="button" class="fm-btn m-btn m-ybtn fr" id="edit">确定</button>
+</div>

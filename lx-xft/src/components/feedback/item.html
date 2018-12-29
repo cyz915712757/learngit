@@ -1,0 +1,33 @@
+{{~ it.data :obj}}
+<div class="history-content clearfix">
+  <div class="person-info fl">
+    <img src="{{=obj.brokerPhotoUrl.replace('{size}','80x60') || '../../assets/img/default.png'}}" class="person-photo" />
+    <p class="person-name">{{=obj.userName}}</p>
+  </div>
+  <div class="person-report fr">
+    <div class="person-status-wrapper">
+      <div class="fl person-report-time">{{=obj.createTime}}发布</div>
+      <div class="fr">
+        {{?obj.status === 1}}
+        <i class="iconfont icon-zhengque"></i> {{??obj.status=== -1}}
+        <i class="iconfont icon-gantanhao"></i> {{??}}
+        <div class="green-circle"></div>
+        {{?}} {{=obj.statusStr}}
+      </div>
+    </div>
+    <div class="person-content-wrapper">
+      {{=obj.content}}
+    </div>
+    <div class="report-image">
+      {{~obj.photoList :img}}
+      <img src="{{=img.replace('{size}','60x45')}}" width="60" height="45"> {{~}}
+    </div>
+    {{?obj.remark.length}}
+    <div class="answer-content">
+      <div class="repley-time">{{=obj.replyTime}}发布</div>
+      <div class="repley-content">布鲁回复：{{=obj.remark}}</div>
+    </div>
+    {{?}}
+  </div>
+</div>
+{{~}}

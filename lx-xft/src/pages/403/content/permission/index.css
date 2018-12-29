@@ -1,0 +1,13 @@
+.wait-dev {
+  width: 1000px;
+  margin: 150px auto 0;
+  text-align: center;
+  color: #999;
+}
+
+.wait-dev p.tip-fb {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 30px auto 10px;
+}

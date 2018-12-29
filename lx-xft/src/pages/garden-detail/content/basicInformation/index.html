@@ -1,0 +1,70 @@
+<div class="garden-common">
+  <p class="garden-common-title">基础信息</p>
+  <hr/>
+  <table class="garden-info">
+    <tr>
+      <th>楼盘名称</th>
+      <td>{{!it.extendName}}</td>
+      <th>物业公司</th>
+      <td>{{!it.propertyCompany}}</td>
+      <th>批地日期</th>
+      <td>{{!it.approvalDateStr}}</td>
+    </tr>
+    <tr>
+      <th>项目地址</t>
+        <td><div id="address" class="ellips long-text" data-text="{{!it.address}}">{{!it.address}}</div></td>
+        <th>物 业 费</th>
+        <td>{{?it.propertyCharge}}{{!it.propertyCharge}}元/㎡{{?}}</td>
+        <th>开盘时间</th>
+        <td>{{!it.openDateStr}}</td>
+    </tr>
+    <tr>
+      <th>售楼地址</t>
+        <td><div id="sellAddress" class="ellips long-text" data-text="{{!it.sellAddress}}">{{!it.sellAddress}}</div></td>
+        <th>装修情况</th>
+        <td>{{!it.decorationStr}}</td>
+        <th>入住时间</th>
+        <td>{{!it.liveDateStr}}</td>
+    </tr>
+    <tr>
+      <th>物业类型</t>
+        <td>{{!it.propertyTypeCodeStr}}</td>
+        <th>总户数</th>
+        <td>{{?it.totalHouseHolds}}{{!it.totalHouseHolds}}户{{?}}</td>
+        <th>价格区间</th>
+        <td>{{?it.minPrice && it.maxPrice}}{{!it.minPrice}}~{{!it.maxPrice}}元/㎡{{??}}暂无数据{{?}}</td>
+    </tr>
+    <tr>
+      <th>开发商</t>
+        <td><div class="ellips long-text">{{~it.developers :value}}{{=value.name}}{{~}}</div></td>
+        <th>总栋数</th>
+        <td>{{?it.totalBuildings}}{{!it.totalBuildings}}栋{{?}}</td>
+        <th>建筑面积</th>
+        <td>{{?it.buildingArea}}{{!it.buildingArea}}平米{{??}}暂无数据{{?}}</td>
+    </tr>
+    <tr>
+      <th>代理商</t>
+        <td><div class="ellips long-text">{{~it.agents :value}}{{=value.name}}{{~}}</div></td>
+        <th>楼层状况</th>
+        <td>{{!it.floorStatus ||'暂无数据'}}</td>
+        <th>占地面积</th>
+        <td>{{?it.coverArea}}{{!it.coverArea}}平米{{?}}</td>
+    </tr>
+    <tr>
+      <th>预售许可证</t>
+        <td>{{!it.preSaleLicence ||'暂无数据'}}</td>
+        <th>车位数</th>
+        <td>{{!it.parkingNum}}</td>
+        <th>容积率</th>
+        <td>{{?it.plotRatio}}{{!it.plotRatio}}%{{?}}</td>
+    </tr>
+    <tr>
+      <th>按揭银行</t>
+        <td><div id="mortgageBank" class="ellips long-text" data-text="{{!it.mortgageBank}}">{{!it.mortgageBank  ||'暂无数据'}}</div></td>
+        <th>车位费</th>
+        <td>{{?it.parkingCharge}}{{!it.parkingCharge}}元/月{{??}}暂无数据{{?}}</td>
+        <th>绿化率</th>
+        <td>{{?it.greenRatio}}{{!it.greenRatio}}%{{?}}</td>
+    </tr>
+  </table>
+</div>

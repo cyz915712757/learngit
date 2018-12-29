@@ -1,0 +1,47 @@
+<div class="card-block res-box">
+  <div class="query-box clearfix">
+    <div class="query-item m-sel select way-sources" id="waySources">
+    </div>
+    <input class="query-item import-batch" type="text" placeholder="导入批次" id="importBatch">
+    <input class="query-item cus-keyword" type="text" placeholder="姓名/手机" id="cusKw">
+    <div class="query-item m-sel select" id="layoutSelect"></div>
+    <input class="query-item cus-keyword" type="text" placeholder="未跟进天数" id="notFollowDays">
+    <a class="m-btn m-ybtn fl" href="javascript:;" id="queryBtn">查询</a>
+    <a class="m-btn m-cbtn fl" href="javascript:;" id="resetBtn">重置</a>
+    <a class="m-btn m-cbtn fl" href="javascript:;" id="repeatBtn">客户去重</a>
+    <a class="fl advance-search pr" href="javascript:;">高级搜索<span class="down-arrow"></span></a>
+  </div>
+  <div class="query-box clearfix js-adv-query dn">
+    <div id="townSelect" class="query-item m-sel select"></div>
+    <div id="regionSelect" class="query-item m-sel select"></div>
+    <div id="areaSelect" class="query-item m-sel select"></div>
+    <div id="gardenSelect" class="query-item m-sel select"></div>
+    <div class="fl">
+      <span class="space-title">面积：</span>
+      <input class="query-item cus-keyword space-input" type="text" id="intentionMinArea">
+      <a href="javascript:;" class="date-text">至</a>
+      <input class="query-item cus-keyword  space-input" type="text" id="intentionMaxArea">
+      <span class="space-title">平方</span>
+    </div>
+    <div class="fl">
+      <span class="price-title">价格：</span>
+      <input class="query-item cus-keyword price-input" type="text" id="intentionMinPrice">
+      <a href="javascript:;" class="date-text">至</a>
+      <input class="query-item cus-keyword  price-input" type="text" id="intentionMaxPrice">
+      <span class="price-title">万元</span>
+    </div>
+  </div>
+  <div class="query-box clearfix js-adv-query dn">
+    <div class="fl">
+      <a class="date-inBox pr" href="javascript:;">
+        <input id="startDate" class="form-control" type="text" placeholder="导入日期" readonly=""><i class="iconfont icon-riqi js-dicon"></i></a>
+      <a href="javascript:;" class="date-text fl">至</a>
+      <a class="date-inBox pr" href="javascript:;">
+        <input id="endDate" class="form-control" type="text" placeholder="导入日期" readonly=""><i class="iconfont icon-riqi js-dicon"></i></a>
+    </div>
+  </div>
+  <div class="m-tb res-tb">
+    <div class="table-responsive" id="resourcesTb"></div>
+  </div>
+  <div id="resPage" class="pagination-box clearfix"></div>
+</div>

@@ -1,0 +1,212 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.login-address {
+  margin: 0 auto;
+  width: 520px;
+  margin-bottom: 25px;
+}
+
+.login-address a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.login-wrapper {
+  width: 520px;
+  height: 500px;
+  /* background-color: #fff;
+  box-shadow: 0 0 3px 2px #999; */
+  margin: 0 auto;
+  padding: 25px 50px 25px;
+}
+
+.login-title {
+  color: #333;
+  text-align: center;
+}
+
+.login-flag {
+  font-size: 16px;
+  /* float: left; */
+}
+
+.login-account {
+  float: right;
+  color: #999;
+}
+
+a.login-company-account {
+  color: #00b4ed;
+}
+
+.login-form-group {
+  width: 420px;
+  height: 43px;
+  line-height: 40px;
+  border: 1px solid #e9e9e9;
+  background-color: #f9f9f9;
+  margin: 20px 0;
+}
+
+.login-form-group label {
+  color: #999;
+  font-weight: 100;
+  margin-left: 20px;
+  float: left;
+}
+
+.login-form-group input {
+  width: 346px;
+  border: 0;
+  margin-left: 20px;
+  background-color: #f9f9f9;
+  height: 40px;
+  outline: none;
+}
+
+.login-form-group.code {
+  width: 282px;
+  float: left;
+}
+
+.login-form-group.code input {
+  width: 260px;
+}
+
+.login-btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 420px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #00b4ed;
+  color: #fff;
+  font-size: 18px;
+}
+
+a.login-btn:hover,
+a.login-btn:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-footer {
+  width: 425px;
+  margin-top: 35px;
+  font-size: 12px;
+}
+
+.login-error-message {
+  line-height: 0;
+  color: #333;
+}
+
+.login-error-message a,
+.icon-gantanhao {
+  color: #00b4ed;
+}
+
+.login-error-message i {
+  margin-right: 10px;
+}
+
+input.belong-company {
+  width: 290px;
+}
+
+input.belong-store {
+  width: 318px;
+}
+
+input.tel-login.special-width {
+  width: 332px;
+}
+
+.get-code-btn {
+  width: 125px;
+  float: right;
+  background-color: #e0e0e0;
+  text-align: center;
+  color: #333;
+  line-height: 52px;
+  margin-top: 20px;
+}
+
+a.get-code-btn:hover,
+a.get-code-btn:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.disable {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.star {
+  color: #00b4ed;
+  margin-left: -18px;
+  float: left;
+  font-size: 18px;
+}
+
+#cityId {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.select .glyphicon-remove {
+  top: 6px;
+  background: transparent;
+}
+
+.report-bind .form-control {
+  width: 347px;
+}
+
+.report-bind .select-menu {
+  left: 21px;
+}
+
+.footer {
+  margin: 0 auto;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  margin-top: -70px;
+}
+
+.layui-layer-title {
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+}
+
+.user-agreement {
+  margin-bottom: 20px;
+}
+
+.user-agreement label {
+  margin-bottom: 20px;
+}
+
+.already-read {
+  color: #999;
+}
+
+.white-user-agreement {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 12px;
+}

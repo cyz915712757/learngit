@@ -1,0 +1,99 @@
+{{?(!it.isInit)&&(it.list)}}
+<ul class="lead-list row-list clearfix">
+  {{~ it.list :obj}}
+  <li>
+    <div class="clearfix">
+      <a data-track="楼盘详情" class="fl" href="garden-detail.html?gid={{!obj.id}}" target="_blank">
+        <div class="item-imgbox pr">
+          {{? obj.sellStatusStr=="预售"}}
+          <span class="tag-box pb bg-ff9">{{!obj.sellStatusStr}}</span> {{?? obj.sellStatusStr=="在售"}}
+          <span class="tag-box pb bg-65c">{{!obj.sellStatusStr}}</span> {{?}}
+          <img class="js-listimg" src="{{!obj.pictureUrl}}">
+        </div>
+      </a>
+      <div class="info-box fl">
+        <a data-track="楼盘详情" class="h-name ellips" href="garden-detail.html?gid={{!obj.id}}" target="_blank" title="{{=obj.originalName||obj.name || ''}}"
+          data-id="{{!obj.id}}">{{=obj.name || ''}}</a>
+        <div class="info-dfbox ">
+          <p class="money-box">
+            <!-- {{?obj.maxRetio||obj.maxRetio||obj.fixed}}{{?obj.maxRetio}}佣金比例：{{=obj.maxRetio}}%&nbsp;&nbsp; {{?}}{{?obj.fixed}}定佣：<span>{{=obj.fixed}}</span>元&nbsp;&nbsp;
+            {{?}}{{?obj.cash}}现金奖：
+            <span>{{=obj.cash}}</span>元 {{?}}{{??}}佣金参阅分销规则或咨询案场{{?}} -->
+            {{?obj.maxRetio||obj.fixed||obj.cash}} {{?obj.maxRetio||obj.fixed}} 佣金:
+            <span>{{?obj.maxRetio}} {{=obj.maxRetio}}%{{?}} {{?(obj.maxRetio&&obj.fixed)}}+{{?}} {{?obj.fixed}}{{=obj.fixed}}元{{?}}&nbsp;&nbsp;&nbsp;&nbsp;
+              {{?}}
+            </span>
+            {{?obj.cash}} 现金奖:
+            <span>{{=obj.cash}}
+              <span>元 {{?}} {{??}} 佣金参阅分销规则或咨询案场 {{?}}
+          </p>
+          <div class="htype-box ellips">
+            <i class="iconfont icon-huxing"></i> {{? obj.layoutsStr}}
+            <span title="{{!obj.layoutsStr}}">{{!obj.layoutsStr}}</span> {{??}}
+            <span>暂无在售户型</span> {{?}}
+          </div>
+          <div class="address-box ellips">
+            <i class="iconfont icon-weizhi"></i>
+            <span title="{{=obj.originalAddress||obj.address||''}}">{{=obj.address||''}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="r-con fr pr">
+        <i class="triangle-down pb"></i>
+        <i class="triangle-up pb"></i> {{?(!it.isInit)&&(it.positionType===1)}} {{? obj.avgPrice}}
+        <p class="price-box">
+          <span>{{!obj.avgPrice}}</span>元/平米</p>
+        {{??}}
+        <p class="price-box no-price no-rep">
+          <span>均价待定</span>
+        </p>
+        {{?}} {{??}} {{? obj.avgPrice}}
+        <p class="price-box no-rep">
+          <span>{{!obj.avgPrice}}</span>元/平米</p>
+        {{??}}
+        <p class="price-box no-price">
+          <span>均价待定</span>
+        </p>
+        {{?}} {{?}} {{?(!it.isInit)&&(it.positionType===1)}}
+        <div class="report-btbox">
+          <a data-track="报备" data-id="{{!obj.id}}" class="btn js-report" href="javascript:;">报备</a>
+        </div>
+        {{?}}
+      </div>
+    </div>
+    {{?it.flag==='gm'}} {{?obj.planDynamic}}
+    <p class="news-box ellips ">
+      <i class="iconfont icon-laba "></i>
+      <a data-track="楼盘详情" href="garden-detail.html?gid={{!obj.id}}&did={{!obj.planDynamic.id}} " target="_blank">{{!obj.planDynamic.title}}</a>
+    </p>{{??}}
+    <p class="no-news-box ">
+    </p>
+    {{?}} {{?}}
+  </li>
+  {{~}}
+</ul>
+{{?}} {{?(!it.isInit)}} {{?(!it.list)&&(!it.flag)}}
+<div id="noData" class="no-data no-data-main">
+  <img src="../../assets/img/no_data.png" width="121" height="193">
+  <p>关注的楼盘将会展示在此处，快去
+    <a data-track="楼盘管理" href="garden-management.html">楼盘管理</a> 看看吧 最多设置6个主打盘哦！
+  </p>
+</div>
+{{?}} {{?(!it.list)&&(it.flag==='gm')&&(!it.other)}}
+<div id="noDataList" class="no-data">
+  <img src="../../assets/img/no_data.png" width="121" height="193"> {{?it.filterText}}
+  <p>没有找到{{!it.filterText}}的内容，换个条件试试吧</p>{{??it.cityflag}}
+  <p>该城市暂无楼盘，换个城市试试吧</p>
+  {{?}}
+</div>
+{{?}} {{?(!it.list)&&(it.flag==='gm')&&(it.other)}}
+<div id="noDataOther" class="no-data no-data-other">
+  <img src="../../assets/img/no_data.png" width="121" height="193">
+  <p class="tip-head ">{{!it.cname}}暂无该楼盘
+  </p>
+  <p>系统已为您自动检测到了其他城市该楼盘的情况，请点击查看</p>
+  <div class="other-list ">
+    {{~ it.other :obj}}
+    <a data-track="楼盘详情" href="garden-detail.html?gid={{!obj.id}}">{{!obj.name}}（{{!obj.cityName}}）</a> {{~}} </div>
+</div>
+{{?}} {{?}}

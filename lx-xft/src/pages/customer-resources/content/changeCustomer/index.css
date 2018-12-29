@@ -1,0 +1,40 @@
+.change-customer {
+  padding: 20px 25px;
+}
+
+.change-customer-form label {
+  color: #999;
+  float: left;
+}
+
+.change-customer-form input {
+  height: 40px;
+}
+
+.change-customer-form .select .glyphicon-remove {
+  top: 5px;
+}
+
+.change-customer-form .outter-customer,
+.change-customer-form .inner-customer {
+  display: inline-block;
+  margin-right: 10px;
+  width: 160px;
+}
+
+.customer-tip {
+  color: #666;
+  font-size: 12px;
+  background-color: #ebfaff;
+  line-height: 24px;
+  padding: 4px 10px;
+  margin: 10px 0;
+}
+
+.customer-tip-title {
+  font-weight: bold;
+}
+
+.change-customer .mmGrid input[type=checkbox] {
+
+}

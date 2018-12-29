@@ -1,0 +1,423 @@
+/* body {
+  min-width: 1280px;
+}
+ */
+
+body {
+  font-family: Arial, "Microsoft YaHei", "\5fae\8f6f\96c5\9ed1", sans-serif;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pr {
+  position: relative;
+}
+
+.pb {
+  position: absolute;
+}
+
+.ellips {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+
+/* 浮动 */
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.dn {
+  display: none;
+}
+
+.db {
+  display: block;
+}
+
+
+/* 边距 */
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+
+/* 背景色 */
+
+.bg-ff9 {
+  background: #00b4ed;
+}
+
+.bg-65c {
+  background: #65c560;
+}
+
+.bg-e98 {
+  background: #e98e15;
+}
+
+
+/* 文字颜色 */
+
+.c-f91 {
+  color: #00b4ed;
+}
+
+.c-f93 {
+  color: #00b4ed;
+}
+
+.c-333 {
+  color: #333;
+}
+
+.c-fff {
+  color: #fff;
+}
+
+
+/*content start*/
+
+.main-content {
+  color: #333;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.fixedly {
+  position: fixed;
+  top: 0;
+  width: 960px;
+  z-index: 20;
+  background-color: #f5f5f5;
+}
+
+.triangle-up,
+.triangle-down {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+
+/*content end*/
+
+
+/* slick */
+
+.slick-slide:focus {
+  outline: none;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 35px !important;
+}
+
+.slick-disabled.slick-arrow:before {
+  color: #b0b0b0 !important;
+}
+
+.slick-disabled.slick-arrow {
+  cursor: default !important;
+}
+
+
+/*表格调整样式 start*/
+
+.m-tb {
+  width: 100%;
+}
+
+.m-tb .mmGrid {
+  border-radius: 0;
+  border: 1px solid #e9e9e9;
+  /*  border-bottom: 0; */
+}
+
+.m-tb .mmGrid .mmg-headWrapper {
+  background-color: #f0f0f0;
+}
+
+.m-tb .mmGrid .mmg-headWrapper .mmg-head th {
+  padding: 4px 4px;
+}
+
+.m-tb .mmGrid .mmg-headWrapper .mmg-head th .mmg-titleWrapper .mmg-title {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 28px;
+  color: #999;
+}
+
+.m-tb .mmGrid .mmg-bodyWrapper .mmg-body td {
+  padding: 5px 4px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #333;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.m-tb .mmGrid .mmg-bodyWrapper .mmg-body a.op-a {
+  color: #00afec;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.m-tb .mmGrid .mmg-bodyWrapper .mmg-body td,
+.m-tb .mmGrid .mmg-headWrapper .mmg-head th {
+  border-right: 0;
+  text-align: center;
+}
+
+.m-tb .mmGrid .mmg-bodyWrapper .mmg-body tr.selected td {
+  background-color: #e4e4e4;
+}
+
+.m-tb .mmGrid .mmg-bodyWrapper .mmg-body tr.hover td,
+.m-tb .mmGrid .mmg-bodyWrapper .mmg-body tr:hover td {
+  background-color: #f9f9f9;
+}
+
+
+/* 已经操作完 */
+
+.m-tb .mmGrid .mmg-bodyWrapper .mmg-body tr.oped td,
+.m-tb .mmGrid .mmg-bodyWrapper .mmg-body tr.oped.selected td {
+  color: #999;
+  background-color: #fff;
+}
+
+
+/*表格调整样式 end*/
+
+
+/* gongyong */
+
+.card-block {
+  width: 1000px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: -1px 0 3px #ededed, 1px 0 3px #ededed, 0 -1px 4px #f2f2f2, 0 3px 8px #ededed;
+}
+
+
+/* 查询下拉框日期按钮 */
+
+.m-sel .form-control {
+  border-radius: 0;
+  height: 40px;
+  border: 1px solid #e9e9e9;
+  box-shadow: none;
+}
+
+.m-sel .scaret {
+  color: #999;
+  top: 18px;
+}
+
+a.date-inBox,
+.date-inBox {
+  width: 140px;
+  float: left;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #e9e9e9;
+  margin-right: 10px;
+}
+
+.date-inBox input.form-control {
+  width: 100%;
+  height: 28px;
+  padding: 0 0 0 15px;
+  display: inline-block;
+  border: none;
+  color: #333;
+  background-color: transparent;
+  box-shadow: none
+}
+
+.date-inBox input::-webkit-input-placeholder {
+  color: #333
+}
+
+.date-inBox input:-moz-placeholder {
+  color: #333
+}
+
+.date-inBox .iconfont {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #9f9f9f
+}
+
+a.date-text,
+date-text {
+  color: #333;
+  border: 0;
+  cursor: default;
+  margin-right: 10px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+}
+
+a.m-btn,
+.m-btn {
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  min-width: 60px;
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+  text-align: center;
+}
+
+a.m-cbtn,
+.m-cbtn {
+  color: #999;
+  background: #f9f9f9;
+  border: 1px solid #e9e9e9;
+}
+
+a.m-ybtn,
+.m-ybtn {
+  color: #fff;
+  background: #00b4ed;
+  border: 1px solid #00b4ed;
+}
+
+.mtab-head {
+  font-size: 0;
+  height: 36px;
+  line-height: 36px;
+  border-bottom: 2px solid #00b4ed;
+  background: #fff;
+}
+
+.mtab-head a {
+  display: inline-block;
+  width: 124px;
+  font-size: 14px;
+  height: 36px;
+  line-height: 36px;
+  color: #999;
+  text-decoration: none;
+  text-align: center;
+}
+
+.mtab-head a.cur {
+  color: #fff;
+  background-color: #00b4ed;
+}
+
+
+/* 间距 */
+
+.gap-dbword {
+  display: inline-block;
+  width: 2em;
+}
+
+#csCon .query-box .form-control,
+#csCon .query-box input {
+  height: 30px !important;
+  line-height: 30px !important;
+  font-size: 12px !important;
+}
+
+#csCon .query-box .form-control {
+  padding: 0 12px !important;
+}
+
+#csCon .query-box .m-sel .scaret {
+  top: 14px;
+}
+
+#csCon .query-item {
+  line-height: 30px !important;
+  height: 30px !important;
+}
+
+#csCon .select .glyphicon-remove {
+  height: 28px !important;
+  line-height: 28px !important;
+  top: 1px !important;
+}
+
+/*.layui-layer-title {
+  font-size: 14px!important;
+  font-weight: bold!important;
+  height: 35px!important;
+  line-height: 35px!important;
+  padding: 0 20px;
+  background: #f0f0f0;
+}
+.layui-layer-setwin{
+  top:10px!important;
+}*/
+.layui-layer-setwin .layui-layer-close1 {
+  width: 13px !important;
+}
+
+.no-data-find {
+  color: #555;
+  margin-left: 10px;
+  font-size: 12px;
+}

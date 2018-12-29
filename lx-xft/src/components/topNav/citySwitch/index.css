@@ -1,0 +1,121 @@
+/*城市切换 */
+
+.nav-bar a.city-select {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 15px;
+  margin-top: 15px;
+  text-decoration: none;
+  min-width: 50px;
+}
+
+a.city-select .iconfont {
+  font-size: 12px;
+  margin-right: 3px;
+  width: 12px;
+  height: 12px;
+}
+
+.city-layer {
+  position: absolute;
+  top: 76px;
+  left: -58px;
+  width: 670px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+  z-index: 3001;
+}
+
+.city-layer .triangle-up {
+  top: -12px;
+  left: 90px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 12px solid #fff;
+}
+
+.nav-bar a.city-layer-close {
+  text-decoration: none;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  color: #dadada;
+  font-size: 34px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.nav-bar a.city-layer-close .iconfont {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  right: 8px;
+  top: 12px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.city-con .tit {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 0 5px 30px;
+  color: #2e2e2e;
+}
+
+.city-opts {
+  margin: 0;
+  padding: 0 25px 25px 30px;
+}
+
+.city-opts .city-letter {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  float: left;
+}
+
+.city-opts .city-letter .iconfont {
+  color: #dadada;
+  font-size: 24px;
+}
+
+.city-opts .city-letter em {
+  width: 24px;
+  height: 24px;
+  font-style: normal;
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.city-opts li {
+  float: left;
+  width: 50%;
+  color: #666;
+  margin: 10px 0 0;
+}
+
+.city-opts li p {
+  margin: 0;
+}
+
+.city-opts li p a {
+  white-space: nowrap;
+  color: #666;
+  line-height: 23px;
+  font-size: 14px;
+  margin: 0 0 0 10px;
+  display: inline-block;
+}
+
+.city-opts li p a.highlight,
+.city-opts li p a:hover {
+  color: #00b4ed;
+}

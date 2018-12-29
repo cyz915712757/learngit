@@ -1,0 +1,83 @@
+<div class="nav-bar">
+  <div class="nav-inner clearfix">
+    <a class="logo fl" href="index.html">新房</a>
+    <!-- 地址切换 -->
+    <div class="fl" id="citySwitch"></div>
+    <ul class="menu-list fl" id="menu">
+      {{~ it.menu :obj}}
+      <li><a data-track="{{!obj.name}}" href="{{!obj.url}}">{{!obj.name}}</a></li>
+      {{~}}
+      <!--<li><a href="employee-management.html">员工管理</a></li>-->
+    </ul>
+    <div class="user-box fr clearfix">
+      <div class="user-info fl js-open">
+        <a class="user-main " href="javascript:;">
+          {{?it.photoUrl}}
+          <img src="{{!it.photoUrl}}" id="avatar">
+          {{??}}
+          <img src="../../assets/img/default.png" id="avatar">
+          {{?}}
+          <span>{{!it.name}}</span>
+        </a>
+        <!--下拉框-->
+        <div class="open-box dn">
+          <!--职位选择-->
+          <div class="job-box-load load js-load"><img src="../../assets/img/load.gif"></div>
+          <div class="job-selbox select dn" id="jobBox">
+          </div>
+          <!--职位选择-->
+          <!--佣金-->
+          <div class="load js-load"><img src="../../assets/img/load.gif"></div>
+          <ul class="money-list clearfix dn" id="money">
+            <li>
+              <p>应结佣金</p>
+              <p class="money-count c-f91" id="totalCom"></p>
+            </li>
+            <li>
+              <p>已结佣金</p>
+              <p class="money-count c-fff" id="paidCom"></p>
+            </li>
+          </ul>
+          <!--佣金-->
+          <!--退出登录-->
+          <div class="user-ctrl">
+            <a href="account-management.html">账户管理 </a>
+            <a class="v-line" href="javascript:;"></a>
+            <a href="javascript:;" id="exitLogin">退出登录</a>
+          </div>
+          <!--账户管理-->
+          <!--联系-->
+          <div class="contact-box pr">
+            <a href="javascript:;">
+              <span>客户经理-{{?it.siteUser}}{{!it.siteUser.name}}{{?}}</span>
+              <p class="phone"> <i class="iconfont icon-dianhua"></i> {{?it.siteUser}}{{!it.siteUser.phone}}{{?}}</p>
+            </a>
+          </div>
+          <!--联系-->
+
+          <!-- <a class="up-ctrl js-up" href="javascript:;"><i class="iconfont icon-xiangxiajiantou-copy"></i></a> -->
+        </div>
+        <!--下拉框end-->
+      </div>
+      <!-- 消息提醒start xiaoxitixing -->
+      <div id="systemMsg" class="fl"></div>
+      <!-- <a class="msg-open js-msg" href="javascript:;"><div class="msg-ibox">
+        <i class="iconfont icon-xiaoxitixing"></i>
+        <span class="remind-icon"></span>
+      </div></a> -->
+      <!-- 消息提醒 -->
+    </div>
+    <div class="search-box fr pr js-nav-search">
+      <a class="search-ibox pb js-search" href="javascript:;"><i class="iconfont icon-sousuo"></i></a>
+      <input type="text" placeholder="请输入楼盘名称" id="keyWord">
+    </div>
+    <!--<a href="javascript:;" class="app-down fr pr">
+      <span>APP下载</span>
+      <div class="down-box">
+        <i class="triangle-up"></i>
+        <img src="../../assets/img/iphone-code.png">
+      </div>
+    </a>-->
+  </div>
+</div>
+<input type="hidden" id="pos">

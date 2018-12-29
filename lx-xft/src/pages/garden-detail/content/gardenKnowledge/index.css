@@ -1,0 +1,11 @@
+.garden-turn .garden-knowledge{
+  color: #888;
+  text-decoration: underline;
+}
+
+.garden-turn .icon-xiazai{
+  font-size: 20px;
+  color: #00b4ed;
+  margin-left: 10px;
+  vertical-align: middle;
+}

@@ -1,0 +1,82 @@
+<div class="edit-info pr">
+  <form>
+    <div class="fm-item">
+      <div class="fm-title">客户资料</div>
+      <div class="fm-box clearfix">
+        <div class="form-group clearfix">
+          <label for="cname"><span>*</span>姓名：</label>
+          <input id="cname" type="text" class="form-control" value="{{=it.item.customerName||''}}">
+        </div>
+        <div class="form-group">
+          <label for="phone"><span>*</span>手机：</label>
+          {{?it.item.phone}}
+          <input id="phone" type="text" class="form-control" value="{{=it.item.phone||''}}" disabled> {{??}}
+          <input id="phone" type="text" class="form-control"> {{?}}
+        </div>
+        <div class="form-group">
+          <label for="waysources"><span>*</span>来源：</label>
+          <div id="wayInfosources" class="select"></div>
+        </div>
+      </div>
+      <div class="fm-box clearfix">
+        <div class="form-group">
+          <label for="customerGroup">分组：</label>
+          <div id="customerGroup" class="select"></div>
+        </div>
+      </div>
+    </div>
+    <div class="fm-item">
+      <div class="fm-title">客户意向</div>
+      <div class="fm-box clearfix">
+        <div class="form-group clearfix">
+          <label for="city">城市：</label>
+          <div id="city" class="select"></div>
+        </div>
+        <div class="form-group">
+          <label for="county">区域：</label>
+          <div id="county" class="select"></div>
+        </div>
+        <div class="form-group">
+          <label for="intentionarea">片区：</label>
+          <div id="intentionArea" class="select"></div>
+        </div>
+      </div>
+      <div class="fm-box clearfix">
+        <div class="form-group clearfix">
+          <label for="garden">楼盘：</label>
+          <div id="garden" class="select"></div>
+        </div>
+        <div class="form-group">
+          <label for="layout">户型：</label>
+          <div id="layout" class="select"></div>
+        </div>
+        <div class="form-group hf-fm">
+          <label for="area">面积：</label>
+          {{?it.item.minArea||it.item.minArea==0}}
+          <input id="minArea" type="text" class="form-control" value="{{=it.item.minArea}}">{{??}}
+          <input id="minArea" type="text" class="form-control">{{?}} -
+          <input id="maxArea" type="text" class="form-control" value="{{=it.item.maxArea||''}}"> 平方
+        </div>
+      </div>
+      <div class="fm-box clearfix">
+        <div class="form-group hf-fm">
+          <label for="price">价格：</label>
+          {{?it.item.minPrice||it.item.minPrice==0}}
+          <input id="minPrice" type="text" class="form-control" value="{{=parseInt(it.item.minPrice/10000,10)}}"> {{??}}
+          <input id="minPrice" type="text" class="form-control">{{?}} - {{?it.item.maxPrice}}
+          <input id="maxPrice" type="text" class="form-control" value="{{=parseInt(it.item.maxPrice/10000,10)}}">{{??}}
+          <input id="maxPrice" type="text" class="form-control"> {{?}} 万元
+        </div>
+      </div>
+      <div class="fm-box clearfix">
+        <div class="form-group remark-box">
+          <label for="remark">备注：</label>
+          <textarea id="remark" cols="30" rows="2" placeholder="您可输入60个字">{{=it.item.remark||''}}</textarea>
+        </div>
+      </div>
+    </div>
+    <div class="btn-box clearfix">
+      <button type="button" id="subBtn" class="fm-btn m-btn m-ybtn fr">保存</button>
+    </div>
+  </form>
+</div>

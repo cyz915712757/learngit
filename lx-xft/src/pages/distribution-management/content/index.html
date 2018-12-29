@@ -1,0 +1,9 @@
+<div id="fxTab">
+  <!-- {{=it.positionType}} -->
+  <div class="mtab-head main-content js-tab">
+    <a data-track="我的分销" class="cur" href="javascript:;" data-type="personal">我的分销</a> {{?it.positionType===2}}
+    <a data-track="部门分销" href="javascript:;" data-type="store">部门分销</a> {{?}} {{?it.positionType===3}}
+    <a data-track="公司分销" href="javascript:;" data-type="company">公司分销</a> {{?}}
+  </div>
+</div>
+<div id="fxCon"></div>

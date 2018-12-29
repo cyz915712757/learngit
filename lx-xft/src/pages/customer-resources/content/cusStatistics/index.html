@@ -1,0 +1,46 @@
+<div class="card-block stastis-box">
+  <div class="query-box clearfix">
+    <a class="date-item cur js-dateitem" href="javascript:;" data-date="7">最近7天</a>
+    <a class="date-item js-dateitem" href="javascript:;" data-date="30">最近30天</a>
+    <div class="fl">
+      <a class="date-inBox pr" href="javascript:;">
+        <input id="startDate" class="form-control" type="text" placeholder="开始日期" readonly=""><i class="iconfont icon-riqi js-dicon"></i></a>
+      <a href="javascript:;" class="date-text fl">至</a>
+      <a class="date-inBox pr" href="javascript:;">
+        <input id="endDate" class="form-control" type="text" placeholder="结束日期" readonly=""><i class="iconfont icon-riqi js-dicon"></i></a>
+    </div>
+    <div class="query-item m-sel select" id="deptSel">
+    </div>
+    <input class="query-item cus-keyword" type="text" placeholder="经纪人姓名/手机" id="brokerName">
+    <a class="m-btn m-ybtn fl" href="javascript:;" id="queryBtn">查询</a>
+    <a class="m-btn m-cbtn fl" href="javascript:;" id="resetBtn">重置</a>
+  </div>
+</div>
+<div class="card-block stastis-box no-padding">
+  <!-- 图表 -->
+  <div class="chart-box">
+    <div class="chart-head" id="chartHead">
+      <a href="javascript:;" class="cur" data-type="addPrivateCustomerCount">录入客户</a>
+      <a href="javascript:;" data-type="resourcesToPrivateCount">资源客转私</a>
+      <a href="javascript:;" data-type="publicToPrivateCount">公客转私</a>
+      <a href="javascript:;" data-type="privateToPublicCount">私客转公</a>
+      <a href="javascript:;" data-type="followCustomerCount">跟进客户</a>
+      <a href="javascript:;" data-type="privateCustomerSum">私客户</a>
+      <a href="javascript:;" data-type="dialCountSum">拨打次数</a>
+    </div>
+    <div class="chart-con pr">
+      <p class="y-text">（人）</p>
+      <p class="x-text">（<span id="xtype">日</span>）</p>
+      <div class="chart-div" id="chart"></div>
+    </div>
+  </div>
+  <!-- 图表 -->
+  <!-- 表格-->
+  <div class="stastis-list">
+    <div class="stastis-head clearfix {{? it.dept===1}}more{{?}}" id="stastisHead">
+      <a href="javascript:;" class="cur item" data-type="personStastis">人员统计</a> {{? it.dept===1}}
+      <a href="javascript:;" class="item" data-type="deptStastis">部门</a> {{?}}
+    </div>
+    <div id="comonTbBox"> </div>
+    <!-- 表格 -->
+  </div>

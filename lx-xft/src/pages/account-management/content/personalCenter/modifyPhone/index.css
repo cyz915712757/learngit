@@ -1,0 +1,125 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.modify-phone-wrapper {
+  width: 420px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.modify-phone-title {
+  color: #333;
+}
+
+.modify-phone-flag {
+  font-size: 16px;
+  float: left;
+}
+
+.modify-phone-form-group {
+  width: 420px;
+  height: 53px;
+  line-height: 50px;
+  border: 1px solid #e9e9e9;
+  background-color: #f9f9f9;
+  margin: 20px 0;
+}
+
+.modify-phone-form-group label {
+  color: #999;
+  font-weight: 100;
+  margin-left: 20px;
+  float: left;
+}
+
+.modify-phone-form-group input {
+  width: 346px;
+  border: 0;
+  margin-left: 20px;
+  background-color: #f9f9f9;
+  height: 50px;
+  outline: none;
+}
+
+.modify-phone-form-group.code {
+  width: 305px;
+  float: left;
+}
+
+.modify-phone-form-group.code input {
+  width: 283px;
+}
+
+.next-btn,
+.confirm-btn {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 420px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #00b4ed;
+  color: #fff;
+  font-size: 18px;
+}
+
+a.next-btn:hover,
+a.confirm-btn:hover,
+a.next-btn:focus,
+a.confirm-btn:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-error-message {
+  line-height: 0;
+  color: #333;
+}
+
+.login-error-message a,
+.icon-gantanhao {
+  color: #00b4ed;
+}
+
+.login-error-message i {
+  margin-right: 10px;
+}
+
+input.tel-login {
+  width: 398px;
+}
+
+.get-code-btn {
+  width: 100px;
+  float: right;
+  background-color: #e0e0e0;
+  text-align: center;
+  color: #333;
+  line-height: 52px;
+  margin-top: 20px;
+}
+
+a.get-code-btn:hover,
+a.get-code-btn:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.disable {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.layui-layer-title {
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+}

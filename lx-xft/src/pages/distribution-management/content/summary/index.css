@@ -1,0 +1,75 @@
+/* summary部分 */
+
+.data-box {
+  padding: 0 20px;
+}
+
+.data-box .item {
+  width: 470px;
+  height: 100px;
+  overflow: hidden;
+  padding: 20px 0 24px;
+  border-top: 4px solid #00b4ed;
+  box-shadow: -1px 0 3px #ededed, 1px 0 3px #ededed, 0 3px 8px #f4f4f4;
+}
+
+.data-box .item.item2 {
+  border-top: 4px solid #f91;
+}
+
+.data-box .iconfont {
+  position: absolute;
+  top: 0;
+  left: 34px;
+  color: #d5d5d5;
+  font-size: 24px;
+}
+
+.data-box .item .subitem {
+  width: 33.3%;
+  float: left;
+}
+
+.data-box .inner-con {
+  color: #999;
+  font-size: 14px;
+}
+
+.data-box .inner-con p.title {
+  font-size: 12px;
+}
+
+.data-box .item1 .inner-con {
+  margin-left: 15px
+}
+
+.data-box .item2 .inner-con {
+  margin-left: 40px
+}
+
+.data-box .item2 .subitem:first-child .inner-con {
+  margin-left: 30px
+}
+
+.data-box .inner-con p {
+  margin-bottom: 5px;
+}
+
+.data-box .inner-con span.c-max {
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+  line-height: 30px;
+}
+
+.data-box .v-line {
+  position: absolute;
+  top: 12px;
+  width: 1px;
+  height: 24px;
+  background-color: #e9e9e9;
+  margin: 0;
+  right: 0;
+}

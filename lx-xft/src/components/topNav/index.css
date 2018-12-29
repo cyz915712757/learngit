@@ -1,0 +1,440 @@
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: #999;
+  font-size: 14px;
+}
+
+.nav-inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+a.logo {
+  display: block;
+  width: 131px;
+  height: 22px;
+  margin-top: 18px;
+  background: url(../../assets/img/lx-logo.png) no-repeat;
+  text-indent: -9999px;
+}
+
+.menu-list,
+ul.menu-list {
+  margin: 0;
+  padding: 0;
+  margin-left: 34px;
+  font-size: 0;
+}
+
+.menu-list li {
+  display: inline-block;
+  margin: 0 15px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.menu-list li a {
+  font-size: 14px;
+  display: inline-block;
+  color: #999;
+}
+
+.menu-list li.cur a {
+  color: #fff;
+}
+
+
+/* search-box start */
+
+.search-box {
+  position: relative;
+  width: 140px;
+  height: 29px;
+  margin-top: 10px;
+  background-color: #333;
+  padding: 0 15px 0 30px;
+  background: url(../../assets/img/search.png) no-repeat;
+}
+
+.search-box input {
+  display: block;
+  background-color: #333;
+  width: 96px;
+  height: 27px;
+  /* line-height: 30px; */
+  font-size: 12px;
+  color: #fff;
+  border: 0;
+  margin-top: 1px;
+}
+
+.search-box a {
+  display: block;
+  width: 28px;
+  height: 28px;
+  text-decoration: none;
+  top: 0;
+  left: 5px;
+}
+
+.search-ibox .iconfont {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.nav-bar a {
+  color: #999;
+}
+
+.user-box {
+  position: relative;
+  margin-left: 35px;
+}
+
+.user-box a {
+  font-size: 12px;
+}
+
+.user-main span {
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+
+a.user-main {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+.user-main img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 10px 10px 0 0;
+  vertical-align: top;
+}
+
+.user-ctrl {
+  font-size: 12px;
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.user-ctrl a {
+  color: #999;
+  line-height: 24px;
+  display: inline-block;
+}
+
+a.v-line {
+  width: 1px;
+  height: 12px;
+  background-color: #666;
+  margin: 0 12px;
+  display: inline-block;
+  font-size: 0;
+}
+
+.user-ctrl a.v-line {
+  height: 24px;
+  vertical-align: bottom;
+  margin: 0 40px;
+}
+
+
+/* 下拉框start */
+
+.open-box {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 270px;
+  height: 330px;
+  background: url(../../assets/img/info-bg.png) no-repeat center #000;
+  z-index: 3000;
+}
+
+a.up-ctrl {
+  position: absolute;
+  text-decoration: none;
+  bottom: 0;
+  width: 100%;
+  height: 38px;
+  color: #fff;
+}
+
+.up-ctrl .iconfont {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  color: #d6d6d6;
+  margin-top: 2px;
+}
+
+
+/* 联系 */
+
+
+/*:root .contact-box {
+  filter: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}*/
+
+.contact-box {
+  width: 100%;
+  height: 52px;
+  /*filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#19ffffff', endColorstr='#19ffffff');*/
+  color: #666;
+  font-size: 0;
+  background-color: #2a2a2a;
+}
+
+.contact-box a {
+  position: relative;
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  font-size: 12px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 20px;
+  padding: 8px 0;
+}
+
+.contact-box .v-line {
+  position: absolute;
+  top: 28px;
+  width: 1px;
+  height: 20px;
+  margin: 0;
+}
+
+.contact-box .iconfont {
+  color: #666;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.contact-box span {
+  color: #666;
+  font-size: 12px;
+  display: block;
+  line-height: 20px;
+}
+
+.contact-box p.phone {
+  margin: 0;
+  font-weight: bold;
+  color: #8c8b8b;
+}
+
+.down-box .triangle-up {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid #373338;
+}
+
+
+/* 联系 */
+
+
+/* 下拉框样式首页 */
+
+.job-selbox {
+  width: 220px;
+  margin: 30px auto 0;
+}
+
+.job-selbox.select .scaret {
+  top: 17px;
+  color: #999;
+}
+
+.job-selbox .select-menu,
+.job-selbox .form-control {
+  background: #333;
+  border: 1px solid #333;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+}
+
+.job-selbox .form-control,
+.job-selbox .select-menu li>a,
+.job-selbox .select-menu li>a:hover,
+.job-selbox .select-menu li>a:focus {
+  font-size: 12px;
+  height: 36px;
+  padding: 0px 10px;
+  line-height: 36px;
+}
+
+.job-selbox .select-menu {
+  margin-top: 0;
+}
+
+.job-selbox .select-menu li>a,
+.job-selbox .select-menu li>a:hover,
+.job-selbox .select-menu li>a:focus {
+  color: #fff;
+  background: #333;
+  border-top: 1px solid #3f3f3f;
+  height: 36px;
+  padding: 0px 10px;
+  line-height: 36px;
+}
+
+
+/* 佣金 */
+
+.money-list {
+  margin: 45px 0 32px;
+}
+
+.money-list li {
+  font-size: 12px;
+  color: #ccc;
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.money-list li p {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.money-list li p.money-count {
+  margin: 0;
+  line-height: 26px;
+}
+
+.money-count span {
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  top: 1px
+}
+
+
+/* 下拉框样式首页 */
+
+.load {
+  height: 47px;
+  margin: 45px 0 32px;
+}
+
+.load img {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 0 auto;
+}
+
+.job-box-load {
+  height: 30px;
+  margin: 30px auto 0;
+}
+
+
+/* 下拉框end */
+
+
+/* app下载 */
+
+a.app-down {
+  text-decoration: underline;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 25px;
+}
+
+.app-down .down-box {
+  position: absolute;
+  top: 50px;
+  z-index: 3001;
+  font-size: 14px;
+  padding: 8px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: #333;
+  display: none;
+  left: -45px;
+}
+
+a.app-down:hover .down-box {
+  display: block;
+}
+
+.down-box img {
+  width: 138px;
+  height: 138px;
+}
+
+
+/* 消息列表 */
+
+a.msg-open {
+  margin-left: 5px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  float: left;
+  text-decoration: none
+}
+
+a.msg-open i {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  line-height: 16px;
+}
+
+.msg-ibox {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #696868;
+  margin-top: 13px;
+}
+
+.remind-icon {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 1px;
+  right: 3px;
+  border-radius: 50%;
+  background: #ff0202;
+}
+
+#noBindStore {
+  text-align: center;
+  color: #fff;
+  padding: 60px 0 30px;
+}
+
+#bindStoreNumber {
+  text-align: center;
+  padding: 30px 0;
+  display: block;
+  font-size: 16px;
+  color: #00b4ed;
+}

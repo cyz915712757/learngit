@@ -1,0 +1,154 @@
+.layui-layer-title {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  height: 35px;
+  line-height: 35px;
+}
+
+.layui-layer-setwin {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 0;
+  line-height: normal;
+}
+
+.report-dialog {
+  padding: 0 40px 0;
+}
+
+.report-dialog input {
+  font-size: 12px;
+}
+
+.report-dialog .select-menu {
+  box-shadow: none;
+}
+
+.report-dialog .form-control {
+  border: 1px solid #e9e9e9;
+  border-radius: 0;
+  box-shadow: none;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 0 0 12px;
+}
+
+.report-dialog .select-menu {
+  font-size: 12px;
+}
+
+.report-dialog .select .glyphicon-remove {
+  height: 28px;
+  width: 28px;
+  top: 1px;
+  background: #f9f9f9;
+  border: 0;
+  box-shadow: none;
+}
+
+.report-dialog .form-control[disabled] {
+  background-color: #e9e9e9;
+  border: 1px solid #e0e0e0;
+}
+
+.report-dialog .frm-item {
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #333;
+}
+
+.report-dialog .frm-item:first-child {
+  margin-top: 18px;
+}
+
+.report-dialog .error-tip {
+  margin: 10px 0 -7px;
+  color: #ff0101;
+}
+
+.report-dialog i {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 6px 0 0;
+}
+
+.report-dialog .tip-container {
+  margin-top: 10px;
+}
+
+.report-dialog .tip-box {
+  font-size: 12px;
+  color: #999;
+  /* text-align: center; */
+  margin: 0;
+}
+
+.ctrl-btbox a {
+  font-size: 12px;
+  display: inline-block;
+  width: 45.238095%;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.ctrl-btbox a.ok-btn {
+  background: #00b4ed;
+}
+
+.ctrl-btbox a.cancel-btn {
+  background: #c0c0c0;
+}
+
+.report-dialog .date-inBox,
+.report-dialog a.date-inBox {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+
+.report-dialog .date-inBox .iconfont {
+  font-size: 16px;
+}
+
+.report-dialog .date-inBox input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.report-dialog .date-inBox input::-ms-input-placeholder,
+.report-dialog .date-inBox input:-moz-placeholder,
+.report-dialog .date-inBox input::-moz-placeholder {
+  color: #999;
+}
+
+#phoneWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#starDom {
+  margin: 0 20px;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.toggle-btn {
+  border-bottom: 1px solid #00b4ed;
+  color: #00b4ed;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0 5px;
+}

@@ -1,0 +1,30 @@
+<ul class="side-list">
+  {{~ it :obj}}
+  <li>
+    <div class="clearfix">
+      <a data-track="{{!it.hTname}}" class="item-imgbox pr fl" href="garden-detail.html?gid={{!obj.id}}" target="_blank">
+        {{?it.hType=="intro"}}
+        <span class="tag-box bg-e98 pb">{{!obj.recommendType}}</span> {{??}} {{?}}
+        <img src="{{!obj.pictureUrl}}">
+      </a>
+      <div class="info-box fl">
+        <a data-track="{{!it.hTname}}" class="h-name ellips" href="garden-detail.html?gid={{!obj.id}}" title="{{!obj.name}}" target="_blank">{{!obj.name}}</a>
+        <div class="address-box ellips" title="{{!obj.address}}">{{!obj.address}}</div>
+        {{? obj.avgPrice}}
+        <p class="price-box"><span>{{!obj.avgPrice,10}}</span>元/平米</p>
+        {{??}}
+        <p class="price-box no-price"><span>均价待定</span></p>
+        {{?}}
+      </div>
+    </div>
+    <p class="money-box">
+      <!-- {{?obj.maxRetio||obj.maxRetio||obj.fixed}}{{?obj.maxRetio}}佣金比例：{{=obj.maxRetio}}%&nbsp;&nbsp; {{?}}{{?obj.fixed}}
+      定佣：{{=obj.fixed}}元&nbsp;&nbsp; {{?}}{{?obj.cash}}现金奖：{{=obj.cash}}元 {{?}}{{??}}佣金参阅分销规则或咨询案场{{?}} -->
+      {{?obj.maxRetio||obj.fixed||obj.cash}} {{?obj.maxRetio||obj.fixed}}
+      <span>佣金:</span>{{?obj.maxRetio}}{{=obj.maxRetio}}%{{?}} {{?(obj.maxRetio&&obj.fixed)}}+{{?}} {{?obj.fixed}}{{=obj.fixed}}元{{?}}&nbsp;&nbsp;&nbsp;&nbsp;
+      {{?}} {{?obj.cash}}
+      <span>现金奖:</span>{{=obj.cash}}元 {{?}} {{??}} 佣金参阅分销规则或咨询案场 {{?}}
+    </p>
+  </li>
+  {{~}}
+</ul>

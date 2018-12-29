@@ -1,0 +1,78 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.main-content {
+  color: #333;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.garden-intro {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 25px 0 0 15px
+}
+
+.result-head {
+  font-size: 14px;
+  border-bottom: 2px solid #00b4ed;
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+.result-head a {
+  text-decoration: none;
+}
+
+.result-head a.item {
+  display: inline-block;
+  height: 36px;
+  line-height: 38px;
+  padding: 0 12px;
+  color: #333;
+  margin-left: 20px
+}
+
+.result-head a.item:first-child {
+  margin-left: 0
+}
+
+.result-head a.item:hover {
+  color: #00b4ed;
+}
+
+.result-head a.item.cur,
+.result-head a.item.cur:hover {
+  background: #00b4ed;
+  color: #fff;
+}
+
+.garden-common {
+  margin-top: 15px;
+  padding: 15px;
+  box-shadow: 0px 3px 2px #ddd;
+  background-color: #fff;
+}
+
+.garden-common .garden-common-title {
+  font-size: 14px;
+  color: #333;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.nav-fixed {
+  position: fixed;
+  top: -15px;
+  z-index: 10000;
+  width: 1000px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#basicInformation,
+#gardenKnowledge {
+  margin-bottom: 20px;
+}
+

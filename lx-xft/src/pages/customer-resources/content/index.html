@@ -1,0 +1,22 @@
+<div id="csTab">
+  <div class="mtab-head main-content js-tab">
+    <a data-track="我的私客" class="cur" href="javascript:;" data-type="private">我的私客</a>
+    {{?it.cusStatistics===1}}
+    <a data-track="员工私客" href="javascript:;" data-type="eprivate">员工私客</a>
+    {{?}}
+    <a data-track="公客" href="javascript:;" data-type="public">公客</a>
+    {{? it.menuListAuth===1}}
+    <a data-track="资源客" href="javascript:;" data-type="resources">资源客</a>
+    {{?}}
+     {{? it.customerType !== 1 && it.menuAuth===1}}
+    <a data-track="资源客管理" href="javascript:;" data-type="resources-manager">资源客管理</a>
+    {{?}}
+    {{? it.cusStatistics=== 1}}
+    <a data-track="客户统计" href="javascript:;" data-type="cus-statistics">客户统计</a>
+    {{?}}
+    {{? it.dialFlag && it.dialFlag === 'Y'}}
+    <a href="javascript:;" class="set-number" value="设置主叫号">设置主叫号</a>
+    {{?}}
+  </div>
+</div>
+<div id="csCon"></div>

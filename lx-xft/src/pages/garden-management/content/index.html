@@ -1,0 +1,45 @@
+<!-- /* 楼盘管理 */ -->
+<div class="search-wrap">
+  <div id="search"></div>
+  <!-- 各种筛选 start -->
+  <div class="main-content filter-box">
+    <div id="filterArea"></div>
+    <div id="filterList"></div>
+  </div>
+  <!-- 各种筛选 end -->
+  <!-- 历史选择start -->
+  <div class="filter-hist dn">
+    <div class="main-content filter-histcon clearfix" id="filterHist">
+      <span class="filter-hist-title">当前找房条件：</span>
+      <a href="javascript:;" class="filter-hist-item filter-del dn" id="delAll"><i class="iconfont icon-qingkong"></i><span>清空筛选条件</span></a>
+    </div>
+  </div>
+  <!-- 历史选择 end -->
+</div>
+<!-- 结果 start -->
+<div class="filter-result main-content">
+  <div class="result-head clearfix js-head pr">
+    <div class="fl" id="sortBox">
+      <a class="item cur" href="javascript:;"><span>默认排序</span></a>
+      <a class="item" href="javascript:;" data-prop="avgPrice"><span>均价</span><i class="iconfont icon-shang"></i>
+</a>
+      <a class="item" href="javascript:;" data-prop="maxRetio"><span>佣金比例</span><i class="iconfont icon-shang"></i></a>
+      <a class="item" href="javascript:;" data-prop="fixed"><span>分销定佣</span><i class="iconfont icon-shang"></i></a>
+    </div>
+    <div class="fr">
+      <a class="count-box" href="javascript:;">共有<span id="allCount"></span>个楼盘</a> {{?it.isrow}}
+      <a class="js-switch switch-box fr" href="javascript:;"> <i class="iconfont icon-tupianliebiao"></i></a>
+      {{??}}
+      <a class="js-switch switch-box fr grid" href="javascript:;"> <i class="iconfont icon-wenziliebiao"></i></a>
+      {{?}}
+    </div>
+  </div>
+  <!-- 列表 -->
+  <div class="result-list">
+    <div id="comList"></div>
+    <!-- 分页 -->
+    <div id="pagination" class="pagination-box clearfix"></div>
+  </div>
+  <!-- 列表 -->
+</div>
+<!-- 结果 end -->

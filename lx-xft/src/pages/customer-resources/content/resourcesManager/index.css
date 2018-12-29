@@ -1,0 +1,117 @@
+.res-box {
+  margin: 20px auto 0;
+}
+
+.res-box .op-a {
+  margin: 0 5px;
+}
+
+.res-box .query-item {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+.res-box .query-item.way-sources {
+  width: 100px;
+}
+
+.res-box .query-item.dept-sources {
+  width: 200px;
+}
+
+.res-box .select .glyphicon-remove {
+  top: 4px;
+}
+
+.res-box .select {
+  clear: none;
+}
+
+.res-box .select-menu {
+  min-width: 100px;
+}
+
+.res-box .query-box {
+  margin-bottom: 20px;
+}
+
+.res-box .m-btn {
+  margin-right: 10px;
+}
+
+.res-box .cus-keyword,
+.res-box .import-batch {
+  width: 100px;
+  padding-left: 15px;
+  border: 1px solid #e9e9e9;
+}
+
+.res-box .date-inBox,
+.res-box a.date-inBox {
+  width: 130px;
+}
+
+.pagination-box .pagination {
+  float: right;
+  margin-bottom: 0;
+}
+
+.sync-resource-wrapper p {
+  color: #999;
+  line-height: 25px;
+}
+
+.sync-resource-wrapper p span {
+  color: #000;
+}
+
+.sync-msg {
+  display: none;
+  color: #7e7e7e;
+}
+
+.sync-msg span {
+  color: #00b4ed;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+  background-color: #00b4ed!important;
+  border: 0!important;
+}
+
+.extend-content {
+  border: 1px solid #e9e9e9;
+  padding: 12px 0px;
+}
+
+.extend-content li {
+  float: left;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  color: #7e7e7e;
+  border-right: 1px solid #e9e9e9;
+  padding-top: 10px;
+  margin-left: 3px;
+}
+
+.extend-content li.last-child {
+  border-right: 0;
+}
+
+.extend-content .show-title {
+  color: #A9A9A9;
+}
+
+.extend-content .show-count {
+  color: #00b4ed;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+a.sync-reset-btn {
+  background-color: #eee!important;
+  cursor: default!important;
+}

@@ -1,0 +1,59 @@
+<!--个人资料页面-->
+<div class="detail-box clearfix">
+  <div class="avatar-box fl">{{?it.showPhotoUrl}} <img src="{{!it.showPhotoUrl}}" id="avatar">{{??}}<img src="../../../../../assets/img/default.png" id="avatar">{{?}}</div>
+  <div class="text-box fl">
+    <table class="text-tb">
+      <tr>
+        <th>姓名：</th>
+        <!--stop暂停 using使用中-->
+        <td class="name-txt">{{!it.name}}{{?it.status=='PAUSED'}}<span class="status stop">（暂停）</span>{{?}} {{?it.status=='OCCUPIED'}}
+          <span class="status using">（使用中）</span>{{?}}</td>
+        <th>岗位：</th>
+        <td>{{!it.brokerPositionDesc}} </td>
+      </tr>
+      <tr>
+        <th width="70">分店：</th>
+        <td width="160">
+          <div class="ellips" title="{{=it.txtStoreName||''}}">{{!it.txtStoreName}}</div>
+        </td>
+        <th>分店码：</th>
+        <td>{{!it.storeNumber||'--'}} </td>
+      </tr>
+      <tr>
+        <th>手机号码：</th>
+        <td>{{!it.userName}}</td>
+        <th>身份证号：</th>
+        <td>{{=it.idCardNo||'--'}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!--记录-->
+<!--<div id="record"> </div>-->
+<!--记录-->
+<div class="record-box">
+  <div class="record-head">人员异动记录</div>
+  {{?it.record&&it.record.length}}
+  <ul class="record-list">
+    <!--<li><span class="date-txt">2017-03-21</span><span class="yuan"></span><span class="line"></span><span>修改分店为"粤海一分店"</span></li>-->
+    {{~it.record :value:index}} {{?it.record.length-1 == index}}
+    <li><span class="date-txt">{{!value.updateTime.substring(0,10)}}</span><span class="yuan"></span><span>修改"{{!value.preRecord}}"为"{{!value.currentRecord}}"</span></li>
+    {{??}}
+    <li><span class="date-txt">{{!value.updateTime.substring(0,10)}}</span><span class="yuan"></span><span class="line"></span><span>修改"{{!value.preRecord}}"为"{{!value.currentRecord}}"</span></li>{{?}}{{~}}
+  </ul>
+  {{??!it.initFlag}}
+  <div class="record-no"><i class="iconfont icon-fabuxuqiuwushuju"></i><p>该人员无异动记录</p></div>
+  {{?}}
+</div>
+<!--记录-->
+<!-- {{?!it.self}}
+<div class="detail-btn btn-box clearfix">
+  {{?it.status=='PAUSED'}}
+  <button type="button" class="fm-btn m-btn m-ybtn fr js-resign">离职</button>
+  <button type="button" class="fm-btn m-btn m-ybtn fr" id="recovery">恢复</button> {{?}}
+  {{?it.status=='OCCUPIED'}}
+  <button type="button" class="fm-btn m-btn m-ybtn fr js-resign">离职</button>
+  <button type="button" class="fm-btn m-btn m-ybtn fr" id="stop">暂停</button>
+  <button type="button" class="fm-btn m-btn m-ybtn fr" id="modify">修改</button> {{?}}
+</div>
+{{?}} -->
